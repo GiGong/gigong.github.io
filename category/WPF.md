@@ -1,5 +1,6 @@
 ---
 layout: category
 title: WPF
-category: wpf
+category: WPF
+permalink: /wpf
 ---

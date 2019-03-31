@@ -4,58 +4,61 @@ layout: home
 
 
 
-<div class="wrapper">
-    <h3>Recent Posts</h3>
-    <ul class="category recent-posts">
-        {% for post in site.posts limit:5  %}
-        {% unless post.draft %}
+<h3>Recent Posts</h3>
+<ul class="category recent-posts">
+    {% for post in site.posts limit:5  %}
+    {% unless post.draft %}
 
-        {% if post.menutitle %}
-        {% assign title = post.menutitle %}
-        {% else %}
-        {% assign title = post.title %}
-        {% endif %}
+    {% if post.menutitle %}
+    {% assign title = post.menutitle %}
+    {% else %}
+    {% assign title = post.title %}
+    {% endif %}
 
-        <li>
-            <div class="article">
-                        <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
-                                title="{{ title }}">{{ title }}</a></span>
-                        <time class="date" itemprop="datePublished"
-                            datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-            </div>
-        </li>
-        {% endunless %}
-        {% endfor %}
-    </ul>
-
-
-    {% assign sorted_cats = site.categories | sort %}
-    {% for category in sorted_cats %}
-    {% assign sorted_posts = category[1] | reversed %}
-    <h3 id="{{category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
-    <ul class="category {{category[0] | uri_escape | downcase | slugify}}">
-        {% for post in sorted_posts %}
-        {% unless post.draft %}
-
-        {% if post.menutitle %}
-        {% assign title = post.menutitle %}
-        {% else %}
-        {% assign title = post.title %}
-        {% endif %}
-
-        <li>
-            <div class="article">
-                <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
-                        title="{{ title }}">{{ title }}</a></span>
-                <time class="date" itemprop="datePublished"
-                    datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-            </div>
-        </li>
-        {% endunless %}
-        {% endfor %}
-    </ul>
+    <li>
+        <div class="article">
+            <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
+                    title="{{ title }}">{{ title }}</a></span>
+            <time class="date" itemprop="datePublished"
+                datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        </div>
+    </li>
+    {% endunless %}
     {% endfor %}
+</ul>
 
 
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+{% assign sorted_posts = category[1] | reversed %}
+<h3 id="{{category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
+<ul class="category {{category[0] | uri_escape | downcase | slugify}}">
+    {% for post in sorted_posts %}
+    {% unless post.draft %}
 
-</div>
+    {% if post.menutitle %}
+    {% assign title = post.menutitle %}
+    {% else %}
+    {% assign title = post.title %}
+    {% endif %}
+
+    <li>
+        <div class="article">
+            <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
+                    title="{{ title }}">{{ title }}</a></span>
+            <time class="date" itemprop="datePublished"
+                datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        </div>
+    </li>
+    {% endunless %}
+    {% endfor %}
+</ul>
+{% endfor %}
+
+<br>
+<br>
+<hr>
+
+{% for category in site.categories %}
+<div>{{category | first}} </div>
+{% endfor %}
