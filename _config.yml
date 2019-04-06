@@ -26,3 +26,4 @@ github: "https://github.com/GiGong"
 markdown: kramdown
 include: ['_pages']
 
+category_main : ["C#", "WPF"]

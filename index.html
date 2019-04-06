@@ -4,8 +4,8 @@ layout: home
 
 
 
-<h3>Recent Posts</h3>
-<ul class="category recent-posts">
+<h3 class="home title">Recent Posts</h3>
+<ul class="home list recent_posts">
     {% for post in site.posts limit:5  %}
     {% unless post.draft %}
 
@@ -15,12 +15,12 @@ layout: home
     {% assign title = post.title %}
     {% endif %}
 
-    <li>
+    <li class="home item">
         <div class="article">
             <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
                     title="{{ title }}">{{ title }}</a></span>
-            <time class="date" itemprop="datePublished"
-                datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+            <!-- <time class="date" itemprop="datePublished"
+                datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time> -->
         </div>
     </li>
     {% endunless %}
@@ -28,37 +28,18 @@ layout: home
 </ul>
 
 
-{% assign sorted_cats = site.categories | sort %}
-{% for category in sorted_cats %}
-{% assign sorted_posts = category[1] | reversed %}
-<h3 id="{{category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
-<ul class="category {{category[0] | uri_escape | downcase | slugify}}">
-    {% for post in sorted_posts %}
+{% for category_main in site.category_main %}
+<h3 class="home title">{{ category_main }}</h3>
+<ul class="home list category_posts">
+    {% assign cat_posts = site.posts | where: 'categories', category_main %}
+    {% for post in cat_posts limit:5 %}
     {% unless post.draft %}
-
-    {% if post.menutitle %}
-    {% assign title = post.menutitle %}
-    {% else %}
-    {% assign title = post.title %}
-    {% endif %}
-
-    <li>
-        <div class="article">
-            <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
-                    title="{{ title }}">{{ title }}</a></span>
-            <time class="date" itemprop="datePublished"
-                datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-        </div>
+    <li class="home item">
+        <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
+        <time class="date" itemprop="datePublished"
+            datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
     </li>
     {% endunless %}
     {% endfor %}
 </ul>
-{% endfor %}
-
-<br>
-<br>
-<hr>
-
-{% for category in site.categories %}
-<div>{{category | first}} </div>
 {% endfor %}
