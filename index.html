@@ -8,19 +8,9 @@ layout: home
 <ul class="home list recent_posts">
     {% for post in site.posts limit:5  %}
 
-    {% if post.menutitle %}
-    {% assign title = post.menutitle %}
-    {% else %}
-    {% assign title = post.title %}
-    {% endif %}
-
     <li class="home item">
-        <div class="article">
-            <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
-                    title="{{ title }}">{{ title }}</a></span>
-            <!-- <time class="date" itemprop="datePublished"
-                datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time> -->
-        </div>
+        <span class="title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
+        <time class="date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>  
     </li>
     {% endfor %}
 </ul>
@@ -32,9 +22,8 @@ layout: home
     {% assign cat_posts = site.posts | where: 'categories', category_main %}
     {% for post in cat_posts limit:5 %}
     <li class="home item">
-        <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
-        <time class="date" itemprop="datePublished"
-            datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        <span class="title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
+        <time class="date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
     </li>
     {% endfor %}
 </ul>

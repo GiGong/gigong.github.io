@@ -1,5 +1,48 @@
 section {
     min-width: 360px;
-    width: 50%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.wrapper {    
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/****** home ******/
+.home.wrapper {
+    max-width: 720px;
+}
+
+.home.title {
+    margin: 0;
+    margin-top: 0.75em;
+
+    font-family: 'Godo';
+    font-size: 2.25em;
+}
+
+.home.list {
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    padding-left: 1em;
+}
+
+.home.item {
+    overflow: auto;
+    
+    font-family: 'Godo';
+    font-size: 1.25em;
+    line-height: 150%;
+}
+
+.date {
+    float: right;
+}
+
+/****** css for mobile ******/
+@media only screen and (max-width: 640px) {
+    .date {
+        display: none;
+    }
 }
