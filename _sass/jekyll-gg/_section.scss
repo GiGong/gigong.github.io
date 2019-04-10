@@ -4,7 +4,7 @@ section {
     margin: 0 auto;
 }
 
-.wrapper {    
+.wrapper {
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -14,7 +14,7 @@ section {
     max-width: 720px;
 }
 
-.home.title {
+.title {
     margin: 0;
     margin-top: 0.75em;
 
@@ -22,15 +22,15 @@ section {
     font-size: 2.25em;
 }
 
-.home.list {
+.list {
     margin-top: 0.5em;
     margin-bottom: 3em;
     padding-left: 1em;
 }
 
-.home.item {
+.item {
     overflow: auto;
-    
+
     font-family: 'Noto Sans KR';
     font-size: 1.25em;
     line-height: 170%;
@@ -39,6 +39,44 @@ section {
 .date {
     float: right;
 }
+
+
+/****** category ******/
+.category.title {
+    text-align: center;
+
+    font-size: 4em;
+}
+
+.category.item {
+    overflow: hidden;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.category.preview {
+    overflow: hidden;
+
+    margin-top: 0.5em;
+    max-height: 2.5em;
+    line-height: 125%;
+}
+
+.category.preview p {
+    display: inline;
+    margin: 0;
+
+    font-size: 0.75em;
+    color: #888;
+}
+
+.category.name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+
 
 /****** css for mobile ******/
 @media only screen and (max-width: 640px) {
