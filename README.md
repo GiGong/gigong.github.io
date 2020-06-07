@@ -1,9 +1,8 @@
 # GiGong's Github Page
 
-link is [https://gigong.tk](https://gigong.tk)
+Link is here [gigong.github.io](https://gigong.github.io).
 
-before I used Tistory [gigong.cf](https://gigong.cf)
+Before I used Tistory blog [gigong.tistory.com](https://gigong.tistory.com).
 
-But I want to make all by my self, so make github pages by jekyll
-
-self-made design
+But I want to make and study web by my self, so make github pages by jekyll
+with self-made design.

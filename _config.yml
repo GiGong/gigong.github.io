@@ -17,7 +17,7 @@ title:          GiGong
 email:          gigong222@gmail.com
 # description:    Computer Engineering student
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://gigong.tk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gigong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  GiGong
 github: "https://github.com/GiGong"
