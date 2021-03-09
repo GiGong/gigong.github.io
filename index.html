@@ -9,8 +9,8 @@ layout: home
     {% for post in site.posts limit:5  %}
 
     <li class="home item">
-        <span class="post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
-        <time class="date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>  
+        <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
+        <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>  
     </li>
     {% endfor %}
 </ul>
@@ -22,8 +22,8 @@ layout: home
     {% assign cat_posts = site.posts | where: 'categories', category_main %}
     {% for post in cat_posts limit:5 %}
     <li class="home item">
-        <span class="post_title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
-        <time class="date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
+        <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
     </li>
     {% endfor %}
 </ul>
