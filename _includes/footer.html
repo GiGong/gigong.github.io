@@ -1,10 +1,15 @@
 <footer>
     <ul>
-        <li><img class="icon" src="{{ '/assets/icons/github.svg' | relative_url }}" alt="Github"></li>
-        <li><img class="icon" src="{{ '/assets/icons/email.svg' | relative_url }}" alt="Email"></li>
+        <li>
+            <a href="{{site.github}}" title="GitHub" target="_blank"><img class="icon"
+                    src="{{ '/assets/icons/github.svg' | relative_url }}" alt="Github"></a></li>
+        <li>
+            <a href="mailto:{{site.email}}" title="email"><img class="icon"
+                    src="{{ '/assets/icons/email.svg' | relative_url }}" alt="Email"></a></li>
     </ul>
     <p id="copyright">© {current_year} GIGONG. ALL RIGHTS RESERVED.</p>
 </footer>
 <script>
-    document.getElementById("copyright").innerHTML = document.getElementById("copyright").innerHTML.replace("{current_year}", new Date().getFullYear());
+    document.getElementById("copyright").innerHTML = document.getElementById("copyright").innerHTML.replace(
+        "{current_year}", new Date().getFullYear());
 </script>

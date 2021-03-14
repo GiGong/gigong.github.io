@@ -3,28 +3,32 @@ layout: home
 ---
 
 
-
-<h3 class="home title">Recent Posts</h3>
-<ul class="home list recent_posts">
-    {% for post in site.posts limit:5  %}
-
-    <li class="home item">
-        <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
-        <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>  
-    </li>
-    {% endfor %}
-</ul>
+<div class="home post_wrapper">
+    <h1 class="home title">Recent Posts</h1>
+    <ul class="home list recent_posts">
+        {% for post in site.posts limit:5  %}
+        <li class="home item">
+            <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
+            <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
 
 {% for category_main in site.category_main %}
-<a href="/{{ category_main | replace: "#", "%23" }}"><h3 class="home title">{{ category_main }}</h3></a>
-<ul class="home list category_posts">
-    {% assign cat_posts = site.posts | where: 'categories', category_main %}
-    {% for post in cat_posts limit:5 %}
-    <li class="home item">
-        <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
-        <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-    </li>
-    {% endfor %}
-</ul>
+<div class="home post_wrapper">
+    <a href="/category/{{ category_main | replace: "#", "%23" }}">
+        <h1 class="home title">{{ category_main }}</h1>
+    </a>
+    <ul class="home list category_posts">
+        {% assign cat_posts = site.posts | where: 'categories', category_main %}
+        {% for post in cat_posts limit:5 %}
+        <li class="home item">
+            <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
+            <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endfor %}
