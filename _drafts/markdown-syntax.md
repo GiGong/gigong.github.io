@@ -41,7 +41,7 @@ categories: [C#, WPF]
 
     <li>
         <div class="article">
-            <span class="title"><a itemprop="name" href="{{ post.url | absolute_url }}"
+            <span class="title"><a itemprop="name" href="{{ post.url | absolute_url | remove: ".html"}}"
                     title="{{ title }}">{{ title }}</a></span>
             <time class="date" itemprop="datePublished"
                 datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
@@ -51,3 +51,11 @@ categories: [C#, WPF]
     {% endfor %}
 </ul>
 {% endfor %}
+
+
+  - ul을 쓸 때
+  - 아래와 같이
+  - `{: #id .class1 .class2 }`
+  - 를 쓰면 
+  - 해당 ul에 id와 class가 들어간다.
+{: .post .skills}
