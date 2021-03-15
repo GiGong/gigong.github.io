@@ -2,10 +2,40 @@
 layout: default
 ---
 
-<div class="wrapper">
+<div class="post wrapper">
     <h1 class="post title">{{ page.title }}</h1>
     <p class="post date">{{ page.date | date: "%Y-%m-%d" }}</p>
+    <div class="post category">
+        {% for category in page.categories %}
+        <a href="/category/{{ category | replace: "#", "%23" }}">{{ category }}</a>
+        {% endfor %}
+    </div>
+    <div class="post tags">
+        [
+        {% for tag in page.tags %}
+        <a href="/tags/posts#{{ tag }}">{{ tag }},</a>
+        {% endfor %}
+        ]
+    </div>
+
+    <div id="adsense_top"></div>
+
     <div class="post content">
         {{content}}
     </div>
+
+    <div class="post related_posts">
+        <h1>Related Posts</h1>
+        <div class="post_list horizontal">
+            {% for post in site.related_posts %}
+            <a href="{{ post.url | absolute_url | remove: ".html"}}">
+                <div class="related_post wrapper">
+                    <div class="related_post title">{{ post.title }}</div>
+                    <div class="related_post content">{{ post.excerpt }}</div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="post comment"></div>
 </div>
