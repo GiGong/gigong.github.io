@@ -5,12 +5,14 @@ layout: home
 
 <div class="home post_wrapper">
     <h1 class="home title">Recent Posts</h1>
-    <ul class="home list recent_posts">
+    <ul class="home list">
         {% for post in site.posts limit:5  %}
-        <li class="home item">
-            <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
-            <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-        </li>
+        <a href="{{ post.url | absolute_url | remove: ".html"}}">
+            <li class="home item">
+                <span class="home post_title">{{ post.title }}</span>
+                <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+            </li>
+        </a>
         {% endfor %}
     </ul>
 </div>
@@ -21,13 +23,15 @@ layout: home
     <a href="/category/{{ category_main | replace: "#", "%23" }}">
         <h1 class="home title">{{ category_main }}</h1>
     </a>
-    <ul class="home list category_posts">
+    <ul class="home list">
         {% assign cat_posts = site.posts | where: 'categories', category_main %}
         {% for post in cat_posts limit:5 %}
-        <li class="home item">
-            <span class="home post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
-            <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-        </li>
+        <a href="{{ post.url | absolute_url | remove: ".html"}}">
+            <li class="home item">
+                <span class="home post_title">{{ post.title }}</span>
+                <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+            </li>
+        </a>
         {% endfor %}
     </ul>
 </div>

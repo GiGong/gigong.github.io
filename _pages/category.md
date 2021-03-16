@@ -5,7 +5,7 @@ permalink: /Category
 ---
 
 {% for category in site.categories %}
-<div class="category name title">
+<div class="category title">
     <a href="{{category[0] | replace: "#", "%23" }}">{{category | first}}</a> 
 </div>
 {% endfor %}

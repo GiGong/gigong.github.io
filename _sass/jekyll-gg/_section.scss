@@ -6,23 +6,42 @@ section {
     padding: 3% 7.5%;
 }
 
-.preview {
-    overflow: hidden;
+.title:not(.post) { 
+    font-weight: 700;
+}
 
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post_title {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+
+    width: 80%;
+    min-width: 280px;
+}
+
+.preview {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical; 
     
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     margin-left: 1rem;
+    font-size: 1.25rem;
+    color: #888;
 }
 
 .preview p {
-    display: inline;
-
-    font-size: 0.75rem;
-    color: #888;
+    margin: 0;
 }
+
 
 //#region    -------- Home --------
 .home.post_wrapper {
@@ -33,8 +52,7 @@ section {
     display: inline-block;
     margin: 0;
 
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
 }
 
 .home.list {
@@ -44,22 +62,8 @@ section {
 }
 
 .home.item {
-    font-size: 1.25rem;
     margin-bottom: 0.5rem;
-}
-
-.home.post_title{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space:nowrap;
-
-    width: 80%;
-    min-width: 280px;
-    display: inline-block;
-}
-
-.date {
-    float: right;
+    font-size: 1.25rem;
 }
 //#endregion -------- Home --------
 
@@ -67,130 +71,23 @@ section {
 //#region    -------- Category --------
 .category.title {
     text-align: center;
-    font-size: 4rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.5rem;
+}
+
+.category.list {
+    padding-left: 1rem;
 }
 
 .category.item {
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
-.category.name {
-    font-size: 3rem;
-    font-weight: bold;
+.category.preview {
+    flex: 100%;
 }
 //#endregion -------- Category --------
-
-
-//#region    -------- Content --------
-.post {
-    margin: 1rem 0;
-}
-
-.post.title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #333;
-}
-
-.post.date {
-    float: unset;
-    text-align: center;
-    font-size: 0.75rem;
-    color: #828282;
-}
-
-.post.content, .post.category, .post.tags {
-    padding: 0 7.5%;
-}
-
-.post.category, .post.tags {
-    color: #828282;
-    font-size: 0.75rem;
-}
-
-.post.category a {
-    text-decoration: underline;
-}
-
-.post.content {
-    margin-top: 5rem;
-    padding-bottom: 5rem;
-    font-weight: 300;
-    border-bottom: 5px double darkgray;
-}
-
-.content img {
-    vertical-align: middle;
-}
-
-.content pre, .content code {
-    font-family: 'D2Coding';
-    font-weight: normal;
-}
-
-//#endregion -------- Content --------
-
-
-//#region -------- Related Posts --------
-.post.related_posts > h1 {
-    margin-left: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.post_list.horizontal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    padding: 0.5rem 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    background-color: #E7E7E7;
-}
-
-.post_list > a {
-    margin: 0 1rem;
-}
-
-.related_post.wrapper {
-    width: 250px;
-    height: 175px;
-
-    background-color: #c4c4c4;
-}
-
-.related_post.title {
-    padding: 1rem;
-    padding-bottom: 0.25rem;
-    
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.related_post.content {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical; 
-
-    padding: 0 1rem;
-    font-weight: 300;
-}
-
-.related_post p {
-    margin: 0;
-    display: inline;
-}
-//#endregion -------- Related Posts --------
 
 
 //#region    -------- css for mobile --------
@@ -201,15 +98,3 @@ section {
 }
 //#endregion -------- css for mobile --------
 
-
-//#region    -------- advertisement --------
-
-#adsense_top {
-    margin: 50px 0;
-    width: 100%;
-    height: 100px;
-
-    background-color: #c4c4c4;
-}
-
-//#endregion -------- advertisement --------

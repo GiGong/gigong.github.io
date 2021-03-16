@@ -6,12 +6,13 @@ layout: default
   <h3 class="category title">{{ page.title }}</h3>
   <ul class="category list category_posts">
     {% for post in site.categories[page.title] %}
-    <li class="category item">
-      <span class="category post_title"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.title }}</a></span>
-      <time class="category date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-      <div class="category preview"><a href="{{ post.url | absolute_url | remove: ".html"}}">{{ post.excerpt }}</a>
-      </div>
-    </li>
+    <a href="{{ post.url | absolute_url | remove: ".html"}}">
+      <li class="category item">
+        <span class="category post_title">{{ post.title }}</span>
+        <time class="category date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        <div class="category preview">{{ post.excerpt }}</div>
+      </li>
+    </a>
     {% endfor %}
   </ul>
 </div>

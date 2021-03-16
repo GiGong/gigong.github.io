@@ -1,0 +1,127 @@
+.post.wrapper {
+    margin-top: 3rem;
+}
+
+
+//#region    -------- Content --------
+.post {
+    margin: 1rem 0;
+}
+
+.post.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.post.date {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #828282;
+}
+
+.post.content, .post.information {
+    padding: 0 7.5%;
+}
+
+.information, .information {
+    color: #828282;
+    font-size: 0.75rem;
+}
+
+.post.category a {
+    text-decoration: underline;
+}
+
+.post.content {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    font-weight: 300;
+    border-bottom: 5px double darkgray;
+}
+
+.content img {
+    vertical-align: middle;
+}
+
+.content pre, .content code {
+    font-family: 'D2Coding';
+    font-weight: normal;
+}
+
+//#endregion -------- Content --------
+
+
+//#region -------- Related Posts --------
+.post.related_posts > h1 {
+    margin-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.related_posts > .post_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0.5rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.post_list > a {
+    margin: 0 1rem;
+}
+
+
+.related_post.wrapper {    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    width: 250px;
+    height: 175px;
+    
+    border-radius: 7px;
+    box-shadow: 0 0 7px 1px darkgrey;
+
+}
+
+.related_post.title {
+    padding: 0 0.75rem;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.related_post.content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; 
+
+    padding: 0 1.5rem;
+    font-weight: 300;
+}
+
+.related_post p {
+    display: inline;
+}
+//#endregion -------- Related Posts --------
+
+
+//#region    -------- advertisement --------
+/*
+#adsense_top {
+    margin: 50px 0;
+    width: 100%;
+    height: 100px;
+
+    background-color: #c4c4c4;
+}
+*/
+//#endregion -------- advertisement --------
