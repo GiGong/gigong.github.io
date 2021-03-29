@@ -20,7 +20,7 @@ layout: home
 
 {% for category_main in site.category_main %}
 <div class="home post_wrapper">
-    <a href="/category/{{ category_main | replace: "#", "%23" }}">
+    <a href="/category/{{ category_main | url_encode }}">
         <h1 class="home title">{{ category_main }}</h1>
     </a>
     <ul class="home list">

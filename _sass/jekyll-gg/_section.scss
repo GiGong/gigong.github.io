@@ -6,6 +6,11 @@ section {
     padding: 3% 7.5%;
 }
 
+.title {
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
 .title:not(.post) { 
     font-weight: 700;
 }
@@ -31,7 +36,8 @@ section {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical; 
-    
+    flex: 100%;
+
     margin-top: 0.25rem;
     margin-left: 1rem;
     font-size: 1.25rem;
@@ -83,11 +89,39 @@ section {
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
-
-.category.preview {
-    flex: 100%;
-}
 //#endregion -------- Category --------
+
+
+//#region -------- Tag --------
+.tag.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.tag > a {
+    color: #555;
+}
+
+.tag_list > a {
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+
+.tag.list {
+    padding-left: 1rem;
+}
+
+.tag_posts > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tag.item {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+//#endregion    -------- Tag --------
 
 
 //#region    -------- css for mobile --------

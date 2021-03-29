@@ -3,14 +3,14 @@ layout: default
 ---
 
 <div class="category wrapper">
-  <h3 class="category title">{{ page.title }}</h3>
+  <h1 class="category title">{{ page.title }}</h1>
   <ul class="category list category_posts">
     {% for post in site.categories[page.title] %}
     <a href="{{ post.url | absolute_url | remove: ".html"}}">
       <li class="category item">
         <span class="category post_title">{{ post.title }}</span>
         <time class="category date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-        <div class="category preview">{{ post.excerpt }}</div>
+        <div class="category preview">{{ post.excerpt | strip_html }}</div>
       </li>
     </a>
     {% endfor %}

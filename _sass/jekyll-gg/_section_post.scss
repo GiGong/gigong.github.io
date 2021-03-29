@@ -8,10 +8,15 @@
     margin: 1rem 0;
 }
 
+.post.content {
+    padding: 0 7.5%;
+}
+
 .post.title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500;
+    
     color: #333;
 }
 
@@ -21,11 +26,11 @@
     color: #828282;
 }
 
-.post.content, .post.information {
+.post.information, .post.content {
     padding: 0 7.5%;
 }
 
-.information, .information {
+.post.meta {
     color: #828282;
     font-size: 0.75rem;
 }
@@ -64,21 +69,17 @@
     flex-direction: row;
     align-items: center;
 
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     overflow-x: auto;
     overflow-y: hidden;
 }
-
-.post_list > a {
-    margin: 0 1rem;
-}
-
 
 .related_post.wrapper {    
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
+
+    margin: 0 1rem;
     width: 250px;
     height: 175px;
     
@@ -115,13 +116,13 @@
 
 
 //#region    -------- advertisement --------
-/*
 #adsense_top {
     margin: 50px 0;
     width: 100%;
     height: 100px;
 
     background-color: #c4c4c4;
+
+    display: none;
 }
-*/
 //#endregion -------- advertisement --------
