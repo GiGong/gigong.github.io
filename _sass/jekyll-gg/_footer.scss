@@ -1,19 +1,20 @@
 footer {
     padding-top: 5rem;
     padding-bottom: 1rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-footer ul {
-    display: table;
+#footer-icon-list {
+    display: flex;
+    justify-content: space-around;
+
     width: 25%;
     min-width: 150px;
-    margin: 0 auto;
     padding: 0;
-}
-
-footer li {
-    display: table-cell;
-    text-align: center;
 }
 
 #copyright {
