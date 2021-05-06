@@ -46,6 +46,18 @@
     border-bottom: 5px double darkgray;
 }
 
+#content-navigation ul {
+    list-style: hangul;
+}
+
+.nav_post > a {
+    color: #09e;
+    text-decoration: none;
+}
+.nav_post > a:hover {
+    text-decoration: underline;
+}
+
 .content img {
     vertical-align: middle;
 }
