@@ -25,26 +25,12 @@ layout: default
     <div id="adsense_top"></div>
 
     <div class="post content">
-        <nav id="nav-toc">
-        </nav>
+        <nav id="nav-toc"></nav>
         {{content}}
     </div>
 
-    <!-- #region toc scrirpt -->
-    <script id="template-toc-nav" type="text/template"><div class="toc_post"><a href="#{nav-id}">{nav-content}</a></div></script>
-    <script defer>
-        const nav_posts = document.getElementsByClassName("nav_post");
-        if (nav_posts.length > 0) {
-            let resultHTML = "목차";
-            const template = document.getElementById("template-toc-nav").innerHTML;
-            for (let nav_post of nav_posts) {
-                resultHTML += template.replace("{nav-id}", nav_post.id)
-                    .replace("{nav-content}", nav_post.textContent);
-            }
-            document.getElementById("nav-toc").innerHTML = resultHTML;
-        }
-    </script>
-    <!-- #endregion toc scrirpt -->
+    {%- include toc_gen.html -%}
+    {%- include anchor_new_tab.html -%}
 
     <div class="post related_posts">
         <h1>Related Posts</h1>
