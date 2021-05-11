@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Unused code"
-date:   
+title:  "Markdown Syntax file"
+date:   2000-01-01 00:00
 categories: [C#, WPF]
 ---
 
-
+해당 포스트의 카테고리로 포스팅 목록 가져오기 
 <ul class="posts-list">
   
-  {% assign category = page.category | default: page.title %}
+  {% assign category = page.categories[0] | default: page.title %}
   {% for post in site.categories[category] %}
     <li>
       <h3>
@@ -22,9 +22,9 @@ categories: [C#, WPF]
   
 </ul>
 
-<!-- ------------ -->
+---
 
-
+홈페이지 전체의 카테고리, 카테고리 별 포스팅 목록
 {% assign sorted_cats = site.categories %}
 {% for category in sorted_cats %}
 {% assign sorted_posts = category[1] | reversed %}
@@ -52,10 +52,41 @@ categories: [C#, WPF]
 </ul>
 {% endfor %}
 
+---
 
+unordered list
   - ul을 쓸 때
   - 아래와 같이
   - `{: #id .class1 .class2 }`
   - 를 쓰면 
   - 해당 ul에 id와 class가 들어간다.
 {: .post .skills}
+
+---
+
+code
+{% highlight c linenos %}
+#include <stdio.h>
+int main() 
+{
+    printf("Hello World!");
+    return 0;
+}
+{% endhighlight %}
+
+
+아래는 config.yml에서  
+```
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+```
+를 지우면 적용
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
