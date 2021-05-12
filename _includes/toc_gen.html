@@ -1,4 +1,4 @@
-<script id="template-toc-nav" type="text/template"><div class="toc_post"><a href="#{nav-id}">{nav-content}</a></div></script>
+<script id="template-toc-nav" type="text/template"><div class="toc_post toc_level{nav-level}"><a href="#{nav-id}">{nav-content}</a></div></script>
 <script defer>
     const nav_posts = document.getElementsByClassName("nav_post");
     if (nav_posts.length === 0)
@@ -9,6 +9,7 @@
         const template = document.getElementById("template-toc-nav").innerHTML;
         for (let nav_post of nav_posts) {
             resultHTML += template.replace("{nav-id}", nav_post.id)
+                .replace("{nav-level}", nav_post.dataset.level)
                 .replace("{nav-content}", nav_post.textContent);
         }
         document.getElementById("nav-toc").innerHTML = resultHTML;
