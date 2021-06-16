@@ -1,5 +1,4 @@
 User-agent: *
-Allow: /_posts/
-Allow: /index.html
+Allow: /
 
 Sitemap: https://www.gigong.io/sitemap.xml
