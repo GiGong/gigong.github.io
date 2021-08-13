@@ -13,13 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: GiGong's Blog
 email: gigong222@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  기공이의 블로그 입니다.
-  GiGong's Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gigong.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+description: >- # this means to ignore newlines
+  기공이의 블로그 입니다.
+  GiGong's Blog
 
 github_username:  GiGong
 github: "https://github.com/GiGong"
@@ -29,3 +31,5 @@ markdown: kramdown
 include: ['_pages']
 
 category_main : ["C#", "WPF"]
+
+permalink: /:year/:month/:day/:title
