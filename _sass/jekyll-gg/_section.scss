@@ -126,6 +126,10 @@ section {
 
 //#region    -------- css for mobile --------
 @media only screen and (max-width: 640px) {
+    section, footer {
+        width: 100%;
+    }
+
     .home.date, .category.date {
         display: none;
     }
