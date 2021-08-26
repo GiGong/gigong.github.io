@@ -28,6 +28,7 @@ github: "https://github.com/GiGong"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 include: ['_pages']
 
 category_main : ["C#", "WPF"]
