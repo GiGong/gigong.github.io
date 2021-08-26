@@ -8,7 +8,8 @@ excerpt_separator: <!--read more-->
 ---
 
 
-{% include post_navigation_heading.html level="2" number="0" content="서론" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="1" number="0" content="서론" %}
 
 새로 블로그를 시작하면서 새롭게 custom domain을 등록하기로 했습니다.
 gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도메인에서 구매하는게 가장 나아보였습니다.
@@ -18,18 +19,22 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 <!--read more-->
 
 
-{% include post_navigation_heading.html level="2" number="1" content="구글 도메인" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="1" number="1" content="구글 도메인" %}
 
 우리가 일반적으로 알고 있는 도메인 업체처럼, 구글도 도메인을 살 수 있습니다.
 구글 도메인([링크][google-domain])을 검색해서 들어가시면 아래와 같은 창으로 넘어갈 겁니다.
 
+<!-- include for image -->
 {% include figure.html url="/assets/images/google-domain/google-domain.jpg" description="구글 도메인" %}
 
 
-{% include post_navigation_heading.html level="3" number="1.1" content="장바구니" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="2" number="1.1" content="장바구니" %}
 
 최적의 도메인 찾기를 누르고 원하는 도메인을 검색합니다. 구매가 가능하다면 장바구니에 추가한 뒤, 바로 장바구니로 이동합니다.
 
+<!-- include for image -->
 {% include figure.html url="/assets/images/google-domain/basket.jpg" description="장바구니 화면" %}
 ※ 저는 포스팅을 하느라 아무 주소를 입력했습니다. io 도메인은 기본 60$/년 입니다.
 
@@ -41,21 +46,25 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 - Google Workspace는 유료이므로 원치 않으면 체크하지 않습니다.
 
 
-{% include post_navigation_heading.html level="3" number="1.2" content="국가 설정" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="2" number="1.2" content="국가 설정" %}
 
 처음 구매하신다면, 확인을 눌러서 넘어갈 때 대한민국은 구글 도메인을 지원하지 않으므로 청구서 수신 국가를 설정하라고 나옵니다.
 국가를 미국으로 설정하고 넘어갑니다.
 
+<!-- include for image -->
 {% include figure.html url="/assets/images/google-domain/nation.jpg" description="국가 설정" %}
 
 다른나라로 설정해도 되는지 테스트해보지 않았지만, 저는 미국으로 설정하고 진행했습니다.  
 뒤에 따로 우리 정보를 입력하는 곳에서 대한민국으로 입력하면 됩니다.
 
 
-{% include post_navigation_heading.html level="3" number="1.3" content="정보 입력" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="2" number="1.3" content="정보 입력" %}
 
 이제 우리의 정보를 입력해야 합니다. 개인정보들을 입력하는데, **영어**로 입력해야 합니다.
 
+<!-- include for image -->
 {% include figure.html url="/assets/images/google-domain/information.jpg" description="정보 입력" %}
 
 모든 주소는 영어로 입력해야 하므로 네이버 영어주소의 도움을 받습니다. ([링크][naver-english-address])
@@ -74,13 +83,15 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 그리고 *주소 입력란 2*에는 "Taepyeong-ro 1-ga, Seoul Metropolitan Government"를 입력하게 됩니다.
 
 
-{% include post_navigation_heading.html level="3" number="1.4" content="구매" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="2" number="1.4" content="구매" %}
 
 입력을 제대로 **영어**로 했다면, 구매화면으로 갈 수 있습니다. 해외결제가 되는 카드를 등록하고 구매하면 되며, 갱신시에는 등록된 카드로 다시 결제됩니다.  
 결제는 달러 $ 단위이므로 환율에따라 달라집니다.. (저는 60$ -> 68096원 나왔습니다.)
 
 
-{% include post_navigation_heading.html level="2" number="000" content="완료" %}
+<!-- include for toc -->
+{% include post_navigation_heading.html level="1" number="000" content="완료" %}
 
 구매를 잘 하셨다면 축하합니다! 도메인의 주인이 되셨습니다.  
 github pages같은 곳에 연결하는 경우 메뉴에서 DNS로 들어가신 후 "맞춤 리소스 레코드"를 통해 연결하시면 됩니다.

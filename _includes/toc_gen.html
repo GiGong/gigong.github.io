@@ -1,8 +1,7 @@
 <script id="template-toc-nav" type="text/template"><div class="toc_post toc_level{nav-level}"><a href="#{nav-id}">{nav-content}</a></div></script>
 <script defer>
     const nav_posts = document.getElementsByClassName("nav_post");
-    if (nav_posts.length === 0)
-    {
+    if (nav_posts.length === 0) {
         document.getElementById("nav-toc").remove();
     } else {
         let resultHTML = "목차";

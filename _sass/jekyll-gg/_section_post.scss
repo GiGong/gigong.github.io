@@ -60,7 +60,7 @@
 
 @for $i from 1 to 6 {
     .toc_level#{$i} {
-      margin-left: 1rem * ($i - 1);
+      margin-left: 1rem * $i;
     }
   }
   

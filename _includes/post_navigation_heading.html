@@ -1,1 +1,4 @@
-<h{{ include.level }} id="nav-{{ include.number | replace: '.', '-' }}" class="nav_post" data-number="{{ include.number }}" data-level="{{ include.level }}"><a href="#post-title">{{ include.number }}.</a> {{ include.content }}</h{{ include.level }}>
+<h{{ include.level | plus: 1 }} id="nav-{{ include.number | replace: '.', '-' }}" class="nav_post"
+    data-number="{{ include.number }}" data-level="{{ include.level }}">
+    <a href="#post-title">{{ include.number }}.</a>{{ include.content }}
+</h{{ include.level | plus: 1 }}>
