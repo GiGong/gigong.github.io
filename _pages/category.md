@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Category
-permalink: /Category
+permalink: /category
 ---
 
 {% for category in site.categories %}

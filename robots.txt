@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /category/
+Disallow: /tags/
 Allow: /
 
 Sitemap: https://www.gigong.io/sitemap.xml
