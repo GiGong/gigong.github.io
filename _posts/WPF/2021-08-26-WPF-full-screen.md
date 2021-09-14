@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WPF 프로그램 전체화면"
-date:   2016-11-29 15:52
+date:   2021-08-26 11:11
 categories: [WPF]
 tags: [wpf, c#, full_screen]
 excerpt_separator: <!--read more-->
