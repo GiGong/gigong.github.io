@@ -17,7 +17,7 @@ WPF로 프로그램을 개발하다 보면 파워포인트의 '슬라이드 쇼'
 
 ---
 
-※ 이 포스트는 과거 [티스토리 블로그][Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.
+*※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.*
 
 
 <!-- include for toc -->
@@ -43,11 +43,10 @@ else
 
 원하는 곳, 예를 들어 KeyDown Event Handler같은 곳에 넣고 전체화면을 전환하면 됩니다.
 
+
 ---
 <!-- include for toc -->
 {% include post_navigation_heading.html level="1" number="2" content="알아보기" %}
-
-코드와 원리에 대해 알아봅시다.
 
 
 <!-- include for toc -->
@@ -76,9 +75,10 @@ Window는 WindowState라는 속성과 WindowStyle이라는 속성이 있습니�
 이 속성은 "항상 위로" 속성이라고 생각하시면 됩니다. 어떤 상황에서도 해당 Window가 가장 위에 떠서 화면을 가리게 되며 다른 창을 다 가리게 됩니다.  
 간혹 Windows 7이나 몇몇 PC에서 *WindowStyle*과 *WindowState*를 다 설정해도 작업표시줄을 가리지 못할 때가 있습니다. 그런 때 *Topmost*를 **True**로 해줄 경우 작업표시줄까지 가리게 됩니다.
 
-***하지만 조심해서 사용해야 합니다.***
+***하지만 모든 화면을 가릴 수 있으니 조심해서 사용해야 합니다.***
 
 
+---
 <!-- include for toc -->
 {% include post_navigation_heading.html level="1" number="000" content="완료" %}
 
@@ -108,7 +108,7 @@ code behind외에도 xaml에서 Binding과 Trigger를 통해 적용시키는 방
 
 
 
-[Tistory-Post]: https://gigong.tistory.com/28
+[Origin-Tistory-Post]: https://gigong.tistory.com/28
 [WindowState-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.window.windowstate
 [WindowStyle-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.window.windowstyle
 [Topmost-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.window.topmost
