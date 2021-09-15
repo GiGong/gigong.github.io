@@ -88,7 +88,7 @@ Manual이 아닐 경우 속성에 따라 정해진 위치에서 시작되기 때
 
 
 
-[wpf-full-screen]: {% post_url 2021-08-26-WPF-full-screen %}
+[wpf-full-screen]: {% post_url WPF/2021-08-26-WPF-full-screen %}
 [Origin-Tistory-Post]: https://gigong.tistory.com/1
 [AllScreens-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.forms.screen.allscreens
 [WindowStartupLocation-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.window.windowstartuplocation
