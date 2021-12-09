@@ -45,6 +45,7 @@
 .toc_post {
     color: black;
     text-decoration: none;
+    line-height: 175%;
 }
 
 .toc_post:hover {
@@ -106,9 +107,15 @@
     font-weight: 400;
 }
 
-.highlight pre, code {
+.content .highlight {
+    overflow-x: auto;
+    margin: 0;
+}
+
+code {
     font-family: 'D2Coding';
     font-weight: normal;
+    font-size: 0.95rem;
 }
 
 //#endregion -------- Content --------
