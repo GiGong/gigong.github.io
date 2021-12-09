@@ -112,7 +112,8 @@
     margin: 0;
 }
 
-code {
+// pre does not inherit font-family
+.highlight pre, code {
     font-family: 'D2Coding';
     font-weight: normal;
     font-size: 0.95rem;
