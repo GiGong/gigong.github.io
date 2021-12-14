@@ -9,7 +9,7 @@ excerpt_separator: <!--read more-->
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="0" content="서론" %}
+{% include post_navigation_heading.html level="1" number="0" content="시작" %}
 
 새로 블로그를 시작하면서 새롭게 custom domain을 등록하기로 했습니다.
 gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도메인에서 구매하는게 가장 나아보였습니다.
@@ -26,7 +26,7 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 구글 도메인([링크][google-domain])을 검색해서 들어가시면 아래와 같은 창으로 넘어갈 겁니다.
 
 <!-- include for image -->
-{% include figure.html url="/assets/images/google-domain/google-domain.jpg" description="구글 도메인" %}
+{% include figure.html url="/assets/images/google-domain/google-domain.webp" description="구글 도메인" %}
 
 
 <!-- include for toc -->
@@ -35,7 +35,7 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 최적의 도메인 찾기를 누르고 원하는 도메인을 검색합니다. 구매가 가능하다면 장바구니에 추가한 뒤, 바로 장바구니로 이동합니다.
 
 <!-- include for image -->
-{% include figure.html url="/assets/images/google-domain/basket.jpg" description="장바구니 화면" %}
+{% include figure.html url="/assets/images/google-domain/basket.webp" description="장바구니 화면" %}
 ※ 저는 포스팅을 하느라 아무 주소를 입력했습니다. io 도메인은 기본 60$/년 입니다.
 
 먼저 등록 기간을 정해주고, 원하는 내용을 체크합니다.
@@ -53,7 +53,7 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 국가를 미국으로 설정하고 넘어갑니다.
 
 <!-- include for image -->
-{% include figure.html url="/assets/images/google-domain/nation.jpg" description="국가 설정" %}
+{% include figure.html url="/assets/images/google-domain/nation.webp" description="국가 설정" %}
 
 다른나라로 설정해도 되는지 테스트해보지 않았지만, 저는 미국으로 설정하고 진행했습니다.  
 뒤에 따로 우리 정보를 입력하는 곳에서 대한민국으로 입력하면 됩니다.
@@ -65,7 +65,7 @@ gigong.io를 사용하기로 정하고 구매방법을 찾아보니, 구글 도�
 이제 우리의 정보를 입력해야 합니다. 개인정보들을 입력하는데, **영어**로 입력해야 합니다.
 
 <!-- include for image -->
-{% include figure.html url="/assets/images/google-domain/information.jpg" description="정보 입력" %}
+{% include figure.html url="/assets/images/google-domain/information.webp" description="정보 입력" %}
 
 모든 주소는 영어로 입력해야 하므로 네이버 영어주소의 도움을 받습니다. ([링크][naver-english-address])
 - 국가를 대한민국으로 설정합니다.
