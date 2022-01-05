@@ -18,7 +18,7 @@ C#에서 정수형의 자릿수를 맞춰주고 싶을 때,
 이 글을 처음 쓸 당시엔 MSDN에 자세한 방법까지는 없었지만, 최근 최근엔 있더라구요.  
 MSDN 링크입니다.([숫자_앞에_0으로_채우기_MSDN][Pad-Number-Zeros-MSDN])
 
----
+----
 
 *※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.*
 
@@ -33,7 +33,7 @@ System.Console.WriteLine($"{i.ToString("X6")}"); // 0005F4
 {% endhighlight %}
 
 
----
+----
 <!-- include for toc -->
 {% include post_navigation_heading.html level="1" number="2" content="알아보기" %}
 
@@ -49,7 +49,7 @@ Code 3번째 줄: 16진수로 자리를 맞추고 싶다면, X 또는 x와 숫�
 ex) "X3", "x8"
 
 
----
+----
 <!-- include for toc -->
 {% include post_navigation_heading.html level="1" number="000" content="완료" %}
 
