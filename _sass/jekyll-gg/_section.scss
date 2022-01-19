@@ -9,6 +9,7 @@ section {
 .title {
     word-break: keep-all;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .title:not(.post) { 
@@ -30,6 +31,12 @@ section {
 
     width: 80%;
     min-width: 280px;
+}
+
+.post_item {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 .preview {
@@ -68,33 +75,30 @@ section {
 }
 
 .home.item {
+    overflow: hidden;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
+}
+
+.home.item.all_posts {
+    margin-bottom: 2rem;
 }
 //#endregion -------- Home --------
 
 
 //#region    -------- Category --------
 .category.title {
-    text-align: center;
     font-size: 3.5rem;
 }
 
 .category.list {
     padding-left: 1rem;
 }
-
-.category.item {
-    overflow: hidden;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-}
 //#endregion -------- Category --------
 
 
 //#region -------- Tag --------
 .tag.title {
-    text-align: center;
     font-size: 3rem;
 }
 
@@ -115,13 +119,16 @@ section {
     color: inherit;
     text-decoration: none;
 }
-
-.tag.item {
-    overflow: hidden;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-}
 //#endregion    -------- Tag --------
+
+
+//#region -------- All Posts --------
+.all_posts.title {
+    font-size: 3rem;
+
+}
+
+//#endregion -------- All Posts --------
 
 
 //#region    -------- css for mobile --------

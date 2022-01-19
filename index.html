@@ -4,7 +4,9 @@ layout: home
 
 
 <div class="home post_wrapper">
-    <h1 class="home title">Recent Posts</h1>
+    <a href="/posts">
+        <h1 class="home title">Recent Posts</h1>
+    </a>
     <ul class="home list">
         {% for post in site.posts limit:5  %}
         <a href="{{ post.url | absolute_url | remove: ".html"}}">
