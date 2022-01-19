@@ -27,9 +27,11 @@ permalink: /tags/posts
 <script>
     const tag = decodeURI(location.hash);
     if (tag) {
+        target = tag.substring(1);
         document.querySelectorAll(".tag.post_wrapper").forEach((s) => {
-            s.hidden = true;
+            if (s.id !== target){
+                s.remove();
+            }
         });
-        document.getElementById(tag.substring(1)).hidden = false;
     }
 </script>
