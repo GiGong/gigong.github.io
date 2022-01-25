@@ -5,6 +5,7 @@ header {
     height: 25%;
     text-align: center;
 
+    color: white;
     background-color: #3CF;
 }
 
@@ -44,7 +45,7 @@ header {
 
 
 //#region    -------- Menu --------
-.top_menu ul {
+#top_menu ul {
     display: flex;
     justify-content: space-around;
     min-width: 360px;
@@ -57,7 +58,7 @@ header {
     list-style: none;
 }
 
-.top_menu li {
+#top_menu li {
     padding: 1.5rem 0;
 
     text-align: center;

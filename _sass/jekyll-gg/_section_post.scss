@@ -6,6 +6,7 @@
 //#region    -------- Content --------
 .post {
     margin: 1rem 0;
+    font-weight: 300;
 }
 
 .post.title {
@@ -76,7 +77,6 @@
 .post.content {
     margin-top: 5rem;
     padding-bottom: 5rem;
-    font-weight: 300;
 
     word-break: keep-all;
     word-wrap: break-word;
