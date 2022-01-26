@@ -3,7 +3,7 @@
 }
 
 
-//#region    -------- Content --------
+//#region    -------- Meta Content --------
 .post {
     margin: 1rem 0;
     font-weight: 300;
@@ -35,45 +35,10 @@
 .post.category a {
     text-decoration: underline;
 }
+//#endregion    -------- Meta Content --------
 
-#nav-toc {
-    padding: 1rem;
-    margin-bottom: 3rem;
 
-    font-size: 1.1rem;
-}
-
-.toc_post {
-    color: black;
-    text-decoration: none;
-    line-height: 175%;
-}
-
-.toc_post:hover {
-    font-weight: 500;
-    color: #09e;
-    text-decoration: underline;
-}
-
-.toc_post > a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-@for $i from 1 to 6 {
-    .toc_level#{$i} {
-      margin-left: 1rem * $i;
-    }
-  }
-  
-.nav_post > a {
-    color: #09e;
-    text-decoration: none;
-}
-.nav_post > a:hover {
-    text-decoration: underline;
-}
-
+//#region    -------- Content --------
 .post.content {
     margin-top: 5rem;
     padding-bottom: 5rem;
@@ -118,8 +83,48 @@
     font-weight: normal;
     font-size: 0.95rem;
 }
-
 //#endregion -------- Content --------
+
+
+//#region    -------- toc --------
+#nav-toc {
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    font-size: 1.1rem;
+}
+
+.toc_post {
+    color: black;
+    text-decoration: none;
+    line-height: 175%;
+}
+
+.toc_post > a:hover {
+    font-weight: 500;
+    color: #09e;
+    text-decoration: underline;
+}
+
+.toc_post > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@for $i from 1 to 6 {
+    .toc_level#{$i} {
+      margin-left: 1rem * $i;
+    }
+  }
+  
+.nav_post > a {
+    color: #09e;
+    text-decoration: none;
+}
+.nav_post > a:hover {
+    text-decoration: underline;
+}
+//#endregion    -------- toc --------
 
 
 //#region -------- Related Posts --------
