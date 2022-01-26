@@ -14,16 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: GiGong's Blog
+title: GiGong Blog
 email: gigong222@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gigong.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: >- # this means to ignore newlines
-  기공이의 블로그 입니다.
-  GiGong's Blog
+  기공의 블로그 입니다. 주로 프로그래밍 내용을 올립니다. 
+  GiGong Blog
 
-github_username:  GiGong
+github_username: GiGong
 github: "https://github.com/GiGong"
 
 # Build settings
