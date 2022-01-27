@@ -12,11 +12,9 @@ excerpt_separator: <!--read more-->
 {% include post_navigation_heading.html level="1" number="0" content="시작" %}
 
 C#에서 정수형의 자릿수를 맞춰주고 싶을 때, 예를 들어 00001, 00123 이런 형태로 출력하는 방법입니다.  
-표준 형식 문자열을 활용하게 되며 자세한 내용은 [MSDN][Standard-Numeric-Format-String-MSDN]에 있습니다.
+[표준 숫자 서식 문자열][Standard-Numeric-Format-String-MSDN]을 활용하게 되며 소수를 포함한 숫자를 문자열로 바꾸는 여러가지 형태가 존재합니다.
 <!--read more-->
 
-MSDN에 해당 내용이 추가되었습니다.
-([MSDN_링크][Pad-Number-Zeros-MSDN])
 
 ----
 
@@ -33,7 +31,6 @@ System.Console.WriteLine($"{i.ToString("X6")}"); // 0005F4
 {% endhighlight %}
 
 
-----
 <!-- include for toc -->
 {% include post_navigation_heading.html level="1" number="2" content="알아보기" %}
 
@@ -53,12 +50,9 @@ Code 3번째 줄: 16진수로 자리를 맞추고 싶다면, X 또는 x와 숫�
 <!-- include for toc -->
 {% include post_navigation_heading.html level="1" number="000" content="마무리" %}
 
-표준 형식 문자열을 사용해서 우리가 원하는 형식으로 String의 형식을 정할 수 있으며, 이는 XAML에서도 사용 가능합니다.
-
-감사합니다.
+표준 숫자 서식 문자열을 사용해서 우리가 원하는 형식으로 String의 형식을 정할 수 있으며, 이는 XAML에서도 사용 가능합니다.
 
 
 
 [Origin-Tistory-Post]: https://gigong.tistory.com/3
-[Pad-Number-Zeros-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros
 [Standard-Numeric-Format-String-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/standard-numeric-format-strings
