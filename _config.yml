@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines
 
 github_username: GiGong
 github: "https://github.com/GiGong"
+tistory: "https://tistory.gigong.io"
 
 # Build settings
 markdown: kramdown
