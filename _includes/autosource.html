@@ -1,0 +1,16 @@
+{%- comment -%}
+when copy text in post, source also copied ( longer than 20 character )
+자동 출처 표기
+code referenced from
+https://stackoverflow.com/a/55466400
+{%- endcomment -%}
+
+<script>
+  document.addEventListener('copy', function (e) {
+    if (window.getSelection().toString().length > 20) { 
+      var text = window.getSelection().toString() + "\n\n출처: " + location.href + " [GiGong Blog]";
+      e.clipboardData.setData('text/plain', text);
+      e.preventDefault();
+    }
+  });
+</script>
