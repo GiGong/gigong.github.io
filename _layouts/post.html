@@ -5,7 +5,7 @@ layout: default
 <div class="post wrapper">
     <div class="post information">
         <h1 id="post-title" class="post title">{{ page.title | newline_to_br}}</h1>
-        <p class="post date">{{ page.date | date: "%Y-%m-%d" }}</p>
+        <p class="post date">{{ page.date | date: "%Y년 %m월 %d일" }}</p>
         <div class="post meta">
             <div class="category">
                 category:
@@ -32,21 +32,8 @@ layout: default
     {% include toc_gen.html %}
     {% include anchor_new_tab.html %}
 
-    <div class="post related_posts">
-        <h1>Related Posts</h1>
-        <div class="post_list">
-            {% for post in site.related_posts %}
-            <a href="{{ post.url | absolute_url | remove: ".html"}}">
-                <div class="related_post wrapper">
-                    <div class="related_post title">{{ post.title }}</div>
-                    <div class="related_post content">
-                        <p>{{ post.excerpt | strip_html }}</p>
-                    </div>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
+    {% include releated_posts.html %}
+    
     <div class="post comment">
         <script src="https://utteranc.es/client.js"
             repo="GiGong/gigong.github.io_comments"

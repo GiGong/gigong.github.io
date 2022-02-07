@@ -149,7 +149,7 @@
     flex-direction: column;
 
     margin: 0 1rem;
-    width: 250px;
+    width: 275px;
     height: 175px;
     
     border-radius: 7px;
@@ -161,7 +161,6 @@
     padding: 0 0.75rem;
     
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
     
     font-size: 1.25rem;
@@ -171,7 +170,7 @@
 .related_post.content {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical; 
 
     padding: 0 1.5rem;

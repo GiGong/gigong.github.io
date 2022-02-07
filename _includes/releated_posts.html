@@ -1,0 +1,55 @@
+{%- comment -%} get posts order by ratio of sharing tags desc {%- endcomment -%}
+
+{% assign total_tags = page.tags.size | times: 1.0 %}
+
+{% capture related_posts %}
+  {% for post in site.posts %}
+    {% if page.id != post.id %}
+      {% assign count_of_tags = 0 %}
+      {% for tag in page.tags %}
+        {% if post.tags contains tag %}
+          {% assign count_of_tags = count_of_tags | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign related_ratio = count_of_tags | divided_by: total_tags | round: 8 %}
+
+      {%- comment -%} change type of ratio to string, pad a number with following zeros {%- endcomment -%}
+      {%- comment -%} because liquid 'sort' is sorting by string alphabetically order... {%- endcomment -%}
+      {% assign related_ratio = related_ratio | append: '' %}
+      {% assign padding = related_ratio.size | minus: 10 | abs %}
+      {% for i in (1..padding) %}
+        {% assign related_ratio = related_ratio | append: '0' %}
+      {% endfor %}
+
+      ,{{ related_ratio }}:{{ post.id }},
+
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign related_posts = related_posts | split: ',' | sort | reverse | slice: 0, 10 %}
+
+<div class="post related_posts">
+  <h1>Related Posts</h1>
+  <div class="post_list">
+
+{% for info in related_posts %}
+  {% assign post_id = info | split: ':' | last %}
+  {% for post in site.posts %}
+    {% if post.id == post_id %}
+      <a href="{{ post.url | absolute_url | remove: ".html"}}">
+        <div class="related_post wrapper">
+          <div class="related_post title">{{ post.title }}</div>
+          <div class="related_post content">
+            <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          </div>
+        </div>
+      </a>
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+  </div>
+</div>
