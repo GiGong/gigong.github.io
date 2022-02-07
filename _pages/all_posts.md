@@ -12,7 +12,7 @@ permalink: /posts
             <li class="all_posts item post_item">
                 <span class="all_posts post_title">{{ post.title }}</span>
                 <time class="all_posts date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-                <div class="all_posts preview">{{ post.excerpt | strip_html }}</div>
+                <div class="all_posts preview">{% include post_excerpt.html %}</div>
             </li>
         </a>
         {% endfor %}

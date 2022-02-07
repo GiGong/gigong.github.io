@@ -42,7 +42,7 @@
         <div class="related_post wrapper">
           <div class="related_post title">{{ post.title }}</div>
           <div class="related_post content">
-            <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+            <p>{% include post_excerpt.html truncate_size="150" %}</p>
           </div>
         </div>
       </a>

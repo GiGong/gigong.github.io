@@ -1,0 +1,10 @@
+{%- comment -%} customising excerpt with start excerpt {%- endcomment -%}
+{%- comment -%} https://cjshelton.github.io/blog/2019/05/27/customising-jekyll-excerpt-start.html {%- endcomment -%}
+
+{% assign excerpt = post.excerpt | split: site.start_excerpt %}
+{% if include.truncate_size %}
+  {% assign truncate_size = include.truncate_size | plus: 0 %}
+  {{ excerpt[1] | strip_html | truncate: truncate_size }}
+{% else %}
+  {{ excerpt[1] | strip_html }}
+{% endif %}

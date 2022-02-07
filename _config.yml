@@ -35,3 +35,5 @@ include: ['_pages']
 category_main : ["C#", "WPF"]
 
 permalink: /:year/:month/:day/:title
+
+start_excerpt: "<!--start excerpt-->"

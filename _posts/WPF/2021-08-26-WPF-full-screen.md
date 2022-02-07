@@ -11,6 +11,7 @@ excerpt_separator: <!--read more-->
 <!-- header for toc -->
 {% include post_navigation_heading.html level="1" number="0" content="시작" %}
 
+<!--start excerpt-->
 WPF로 프로그램을 개발하다 보면 파워포인트의 '슬라이드 쇼'처럼 전체화면이 필요할 때가 있습니다.  
 프로그램을 전체화면 시키는 방법과 원리에 관한 글입니다.
 <!--read more-->

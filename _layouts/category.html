@@ -10,7 +10,7 @@ layout: default
       <li class="category item post_item">
         <span class="category post_title">{{ post.title }}</span>
         <time class="category date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-        <div class="category preview">{{ post.excerpt | strip_html }}</div>
+        <div class="category preview">{% include post_excerpt.html %}</div>
       </li>
     </a>
     {% endfor %}

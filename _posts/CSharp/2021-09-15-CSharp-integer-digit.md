@@ -11,6 +11,7 @@ excerpt_separator: <!--read more-->
 <!-- header for toc -->
 {% include post_navigation_heading.html level="1" number="0" content="시작" %}
 
+<!--start excerpt-->
 C#에서 정수형의 자릿수를 맞춰주고 싶을 때, 예를 들어 00001, 00123 이런 형태로 출력하는 방법입니다.  
 [표준 숫자 서식 문자열][Standard-Numeric-Format-String-MSDN]을 활용하게 되며 소수를 포함한 숫자를 문자열로 바꾸는 여러가지 형태가 존재합니다.
 <!--read more-->

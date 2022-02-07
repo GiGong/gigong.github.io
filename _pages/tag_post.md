@@ -15,7 +15,7 @@ permalink: /tags/posts
             <li class="tag item post_item">
                 <span class="tag post_title">{{ post.title }}</span>
                 <time class="tag date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-                <div class="tag preview">{{ post.excerpt | strip_html }}</div>
+                <div class="tag preview">{% include post_excerpt.html %}</div>
             </li>
         </a>
     {% endfor %}

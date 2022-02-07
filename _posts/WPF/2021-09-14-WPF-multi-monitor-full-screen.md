@@ -11,6 +11,7 @@ excerpt_separator: <!--read more-->
 <!-- header for toc -->
 {% include post_navigation_heading.html level="1" number="0" content="시작" %}
 
+<!--start excerpt-->
 WPF 프로그램이 서브모니터에 전체화면이 되게 해야 할 때가 있습니다. 그 방법에 대해 알아보겠습니다.
 <!--read more-->
 
