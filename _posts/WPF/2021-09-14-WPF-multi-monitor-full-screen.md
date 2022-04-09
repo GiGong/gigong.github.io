@@ -9,7 +9,7 @@ excerpt_separator: <!--read more-->
 
 
 <!-- header for toc -->
-{% include post_navigation_heading.html level="1" number="0" content="시작" %}
+{% include post_function/post_navigation_heading.html level="1" number="0" content="시작" %}
 
 <!--start excerpt-->
 WPF 프로그램이 서브모니터에 전체화면이 되게 해야 할 때가 있습니다. 그 방법에 대해 알아보겠습니다.
@@ -17,13 +17,13 @@ WPF 프로그램이 서브모니터에 전체화면이 되게 해야 할 때가 
 
 기본적으로 WPF 프로그램을 전체화면 하는 방법은 [여기][wpf-full-screen]에 있습니다. 
 
----
+----
 
 *※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.*
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="1" content="코드 먼저 보기" %}
+{% include post_function/post_navigation_heading.html level="1" number="1" content="코드 먼저 보기" %}
 
 ※ *참조를 추가해야 합니다.*
 
@@ -49,13 +49,13 @@ sub.WindowState = System.Windows.WindowState.Maximized;
 여기서 SubWindow는 임의로 만든 Window입니다.
 
 
----
+----
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="2" content="알아보기" %}
+{% include post_function/post_navigation_heading.html level="1" number="2" content="알아보기" %}
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="2" number="2.1" content="Screen과 WorkingArea" %}
+{% include post_function/post_navigation_heading.html level="2" number="2.1" content="Screen과 WorkingArea" %}
 
 먼저 2번째 줄에 있는 **System.Windows.Forms.Screen.AllScreens[1].WorkingArea** 입니다. ([AllScreens_MSDN][AllScreens-MSDN])
 
@@ -68,7 +68,7 @@ WPF에서는 Primary 모니터의 속성은 제공하지만 서브모니터는 �
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="2" number="2.2" content="WindowStartupLocation" %}
+{% include post_function/post_navigation_heading.html level="2" number="2.2" content="WindowStartupLocation" %}
 
 다른 코드들은 WPF를 전체화면 하는 과정과 다른게 없지만, 창을 새로 띄우면서 전체화면 시킬 거라면 중요한 점이 있습니다. 이미 Window가 화면에 떠 있다면 상관이 없지만,   
 6번줄의 ***WindowStartupLocation***을 꼭 Manual로 해주어야 우리가 원하는 위치에서 Window가 생기고, 그 화면에서 전체화면이 되기 때문입니다.  
@@ -78,9 +78,9 @@ WindowStartupLocation은 이름 그대로 Window가 시작될 때 어디서 시�
 Manual이 아닐 경우 속성에 따라 정해진 위치에서 시작되기 때문에 위에서 우리가 설정한 Left와 Top 속성이 먹히지 않습니다.
 
 
----
+----
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="000" content="완료" %}
+{% include post_function/post_navigation_heading.html level="1" number="000" content="완료" %}
 
 새 창을 띄우면서 전체화면 시키는 파워포인트 발표 슬라이드 쇼 처럼 서브 모니터에서 전체화면이 필요할 때 사용하는 코드입니다.
 이 코드도 MVVM 과 결합하여 Command로 전달할 수 있지만, 나중에 MVVM을 포스팅하게 되면 같이 쓰도록 하겠습니다.

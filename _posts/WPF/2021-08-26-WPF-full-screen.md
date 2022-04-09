@@ -9,20 +9,20 @@ excerpt_separator: <!--read more-->
 
 
 <!-- header for toc -->
-{% include post_navigation_heading.html level="1" number="0" content="시작" %}
+{% include post_function/post_navigation_heading.html level="1" number="0" content="시작" %}
 
 <!--start excerpt-->
 WPF로 프로그램을 개발하다 보면 파워포인트의 '슬라이드 쇼'처럼 전체화면이 필요할 때가 있습니다.  
 프로그램을 전체화면 시키는 방법과 원리에 관한 글입니다.
 <!--read more-->
 
----
+----
 
 *※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.*
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="1" content="코드 먼저 보기" %}
+{% include post_function/post_navigation_heading.html level="1" number="1" content="코드 먼저 보기" %}
 
 바로 WPF에서 특정 Window를 전체화면 시키는 코드입니다.
 해당 Window의 code behind에서 실행시켜야 하며 여기서 this는 해당 window가 됩니다. (ex. MainWindow.xaml.cs)
@@ -45,13 +45,13 @@ else
 원하는 곳, 예를 들어 KeyDown Event Handler같은 곳에 넣고 전체화면을 전환하면 됩니다.
 
 
----
+----
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="2" content="알아보기" %}
+{% include post_function/post_navigation_heading.html level="1" number="2" content="알아보기" %}
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="2" number="2.1" content="WindowState와 WindowStyle 속성" %}
+{% include post_function/post_navigation_heading.html level="2" number="2.1" content="WindowState와 WindowStyle 속성" %}
 
 Window는 WindowState라는 속성과 WindowStyle이라는 속성이 있습니다.  
 ([WindowState_MSDN][WindowState-MSDN])
@@ -70,7 +70,7 @@ Window는 WindowState라는 속성과 WindowStyle이라는 속성이 있습니�
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="2" number="2.2" content="Topmost 속성" %}
+{% include post_function/post_navigation_heading.html level="2" number="2.2" content="Topmost 속성" %}
 
 마지막은 5번과 11번 줄의 *Topmost* 속성입니다. ([Topmost_MSDN][Topmost-MSDN])  
 이 속성은 "항상 위로" 속성이라고 생각하시면 됩니다. 어떤 상황에서도 해당 Window가 가장 위에 떠서 화면을 가리게 되며 다른 창을 다 가리게 됩니다.  
@@ -79,9 +79,9 @@ Window는 WindowState라는 속성과 WindowStyle이라는 속성이 있습니�
 ***하지만 모든 화면을 가릴 수 있으니 조심해서 사용해야 합니다.***
 
 
----
+----
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="000" content="완료" %}
+{% include post_function/post_navigation_heading.html level="1" number="000" content="완료" %}
 
 WPF에서 원하는 Window를 전체화면 시키는 방법과 원리에 대해 알아보았습니다.
 

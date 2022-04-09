@@ -9,7 +9,7 @@ excerpt_separator: <!--read more-->
 
 
 <!-- header for toc -->
-{% include post_navigation_heading.html level="1" number="0" content="시작" %}
+{% include post_function/post_navigation_heading.html level="1" number="0" content="시작" %}
 
 <!--start excerpt-->
 C#에서 정수형의 자릿수를 맞춰주고 싶을 때, 예를 들어 00001, 00123 이런 형태로 출력하는 방법입니다.  
@@ -23,7 +23,7 @@ C#에서 정수형의 자릿수를 맞춰주고 싶을 때, 예를 들어 00001,
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="1" content="코드 먼저 보기" %}
+{% include post_function/post_navigation_heading.html level="1" number="1" content="코드 먼저 보기" %}
 
 {% highlight csharp linenos %}
 int i = 1524;
@@ -33,7 +33,7 @@ System.Console.WriteLine($"{i.ToString("X6")}"); // 0005F4
 
 
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="2" content="알아보기" %}
+{% include post_function/post_navigation_heading.html level="1" number="2" content="알아보기" %}
 
 코드와 원리가 간단해서 가볍게 설명하겠습니다.  
 해당 int 변수의 ToString에서 매개변수로 전달해주면 됩니다.
@@ -49,7 +49,7 @@ Code 3번째 줄: 16진수로 자리를 맞추고 싶다면, X 또는 x와 숫�
 
 ----
 <!-- include for toc -->
-{% include post_navigation_heading.html level="1" number="000" content="마무리" %}
+{% include post_function/post_navigation_heading.html level="1" number="000" content="마무리" %}
 
 표준 숫자 서식 문자열을 사용해서 우리가 원하는 형식으로 String의 형식을 정할 수 있으며, 이는 XAML에서도 사용 가능합니다.
 
