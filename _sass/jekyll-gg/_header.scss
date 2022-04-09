@@ -3,7 +3,6 @@ header {
     padding: 0;
     width: 100%;
     height: 25%;
-    text-align: center;
 
     color: white;
     background-color: #3CF;
@@ -13,57 +12,51 @@ header {
 //#region    -------- Icon --------
 #header-icon-list {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 
     margin: 0;
 }
 
 .icon_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
+}
 
-    width: 75px;
-    height: 75px;
+.icon {
+    width: 40px;
 }
 //#endregion -------- Icon --------
 
 
 //#region    -------- Title --------
 #top-title {
-    width: 100%;
     margin-top: 2rem;
-    display: inline-block;
-}
 
-#top-title a {
     text-align: center;
     font-family: 'Trocchi', serif;
-    font-size: 6rem;
+    font-size: 5rem;
 }
 //#endregion -------- Title --------
 
 
 //#region    -------- Menu --------
-#top_menu ul {
+#top-menu {
     display: flex;
-    justify-content: space-around;
-    min-width: 360px;
-    width: 30%;
+    justify-content: center;
 
-    margin: auto;
-    padding: 0;
-
-    overflow: auto;
-    list-style: none;
+    padding-bottom: 1rem;
 }
 
-#top_menu li {
-    padding: 1.5rem 0;
+#top-menu ul {
+    display: flex;
 
-    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#top-menu li {
     font-family: 'Oxygen', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    padding: 0 1rem;
 }
 //#endregion -------- Menu --------

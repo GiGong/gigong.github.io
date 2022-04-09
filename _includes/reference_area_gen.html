@@ -1,0 +1,15 @@
+{%- comment -%}
+how-to-move-an-element-into-another-element
+https://stackoverflow.com/a/33724397
+{%- endcomment -%}
+
+<script defer>
+  const target = document.getElementById("post-reference-list");
+  if (target) {
+    const fragment = document.createDocumentFragment();
+    fragment.appendChild(target);
+    document.getElementById("reference-wrapper").appendChild(fragment);
+  } else {
+    document.getElementById("reference-wrapper").remove();
+  }
+</script>

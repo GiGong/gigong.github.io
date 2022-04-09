@@ -1,7 +1,11 @@
-.post.wrapper {
+#post-wrapper {
     margin-top: 3rem;
+    font-weight: var(--text);
 }
 
+#post-header, #post-content, #nav-toc {
+    padding: 0 5%;
+}
 
 //#region    -------- Meta Content --------
 .post {
@@ -9,89 +13,43 @@
     font-weight: 300;
 }
 
-.post.title {
+#post-header {
+    font-size: 0.9rem;
+}
+
+#post-information {
     text-align: center;
+}
+
+#post-title {
     font-size: 2.5rem;
-    font-weight: 500;
-    
-    color: #333;
+    font-weight: var(--bold);
+    word-break: keep-all;
 }
 
-.post.date {
-    text-align: center;
-    font-size: 0.75rem;
-    color: #828282;
+#post-date, #post-meta {
+    color: #777;
 }
 
-.post.information, .post.content {
-    padding: 0 7.5%;
+.post_meta_list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
 }
 
-.post.meta {
-    color: #828282;
-    font-size: 0.75rem;
-}
-
-.post.category a {
+.post_meta_item {
+    padding: 0 0.25rem;
     text-decoration: underline;
 }
 //#endregion    -------- Meta Content --------
 
 
-//#region    -------- Content --------
-.post.content {
-    margin-top: 5rem;
-    padding-bottom: 5rem;
-
-    word-break: keep-all;
-    word-wrap: break-word;
-    
-    border-bottom: 5px double darkgray;
-}
-
-#content-navigation ul {
-    list-style: hangul;
-}
-
-.content img {
-    max-width: 100%;
-    height: auto;
-}
-
-.content .figure_image {
-    text-align: center;
-}
-
-.figure_image figcaption {
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-.content a:not(.toc_post a, .nav_post a) {
-    color: #039;
-    font-weight: 400;
-}
-
-.content .highlight {
-    overflow-x: auto;
-    margin: 0;
-}
-
-// pre does not inherit font-family
-.highlight pre, code {
-    font-family: 'D2Coding';
-    font-weight: normal;
-    font-size: 0.95rem;
-}
-//#endregion -------- Content --------
-
-
 //#region    -------- toc --------
 #nav-toc {
-    padding: 1rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .toc_post {
@@ -104,11 +62,6 @@
     font-weight: 500;
     color: #09e;
     text-decoration: underline;
-}
-
-.toc_post > a {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 @for $i from 1 to 6 {
@@ -127,58 +80,139 @@
 //#endregion    -------- toc --------
 
 
-//#region -------- Related Posts --------
-.post.related_posts > h1 {
-    margin-left: 1.25rem;
-    margin-bottom: 0.5rem;
+//#region    -------- Content --------
+#post-content {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+
+    word-break: keep-all;
+    word-wrap: break-word;
+    
+    border-top: 5px double darkgray;
+    border-bottom: 5px double darkgray;
 }
 
-.related_posts > .post_list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#post-content img {
+    max-width: 100%;
+    height: auto;
+}
 
+#post-content .figure_image {
+    text-align: center;
+}
+
+.figure_image figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+#post-content a:not(.toc_post a, .nav_post a) {
+    color: #039;
+    font-weight: var(--regular);
+}
+
+#post-content .highlight {
+    overflow-x: auto;
+    margin: 0;
+}
+
+// pre does not inherit font-family
+.highlight pre, code {
+    font-family: 'D2Coding';
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+//#endregion -------- Content --------
+
+
+//#region    -------- reference area --------
+#reference-wrapper {
+    margin-top: 10rem;
+    border-top: 2px solid darkgray;;
+}
+
+#post-reference-list {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+#post-reference-list > li {
+    margin-bottom: 0.2rem;
+}
+//#endregion -------- references area --------
+
+
+//#region -------- Related Posts --------
+#related-post {
+    margin: 3rem 0;
+}
+
+#related-post-list-wrapper {
+    position: relative;
+}
+
+#related-post-list {
+    display: flex;
+    list-style: none;
+    
     padding: 0.5rem 1rem;
     overflow-x: auto;
-    overflow-y: hidden;
+
+    scroll-behavior: smooth;
 }
 
-.related_post.wrapper {    
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-
+#related-post-list > a{
     margin: 0 1rem;
+}
+
+.related_post_wrapper {
+    padding: 1rem;
     width: 275px;
-    height: 175px;
+    height: 100%;
     
     border-radius: 7px;
     box-shadow: 0 0 7px 1px darkgrey;
-
 }
 
-.related_post.title {
-    padding: 0 0.75rem;
-    
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-    font-size: 1.25rem;
+.related_post_title {
     font-weight: 500;
+    text-align: left;
 }
 
-.related_post.content {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; 
+.related_post_content {
+    padding: 0 0.4rem;
 
-    padding: 0 1.5rem;
+    font-size: 0.8rem;
     font-weight: 300;
 }
 
-.related_post p {
-    display: inline;
+.post_wrapper_btn {
+    position: absolute;
+    top: calc(50% - 2.5rem);
+    cursor: pointer;
+
+    background: transparent;
+    border-radius: 7px;
+    height: 5rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.post_wrapper_btn:hover {
+    background-color: whitesmoke;
+}
+
+
+#btn-left {
+    left: 0;
+}
+
+#btn-right {
+    right: 0;
 }
 //#endregion -------- Related Posts --------
 

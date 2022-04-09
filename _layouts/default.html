@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "ko" }}">
-{% include head.html %}
+    {% include structure/head.html %}
 
-<body>
-    
-    {% include header.html %}
+    <body>
+        
+        {% include structure/header.html %}
 
-    <section>
-        {{ content }}
-    </section>
+        <section>
+            {{ content }}
+        </section>
 
-    {% include footer.html %}
+        {% include structure/footer.html %}
 
-    {% include scripts.html %}
-</body>
+        
+        {% include post_function/autosource.html %}
+        {% include reference_area_gen.html %}
+    </body>
 
 </html>

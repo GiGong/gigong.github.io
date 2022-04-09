@@ -2,46 +2,49 @@
 layout: default
 ---
 
-<div class="post wrapper">
-    <div class="post information">
-        <h1 id="post-title" class="post title">{{ page.title | newline_to_br}}</h1>
-        <p class="post date">{{ page.date | date: "%Y년 %m월 %d일" }}</p>
-        <div class="post meta">
-            <div class="category">
-                category:
-                {% for category in page.categories %}
-                <a href="/category/{{ category | url_encode }}">{{ category }}</a>
-                {% endfor %}
-            </div>
-            <div class="tags">
-                tag [
-                {% for tag in page.tags %}
-                <a href="/tags/posts#{{ tag }}">{{ tag }},</a>
-                {% endfor %}
-                ]
-            </div>
-        </div>
+<div id="post-wrapper">
+  <div id="post-header">
+    <div id="post-information">
+      <h1 id="post-title">{{ page.title | newline_to_br}}</h1>
+      <p id="post-date"><time datetime="{{ page.date | date: "%Y년 %m월 %d일" }}">{{ page.date | date: "%Y년 %m월 %d일" }}</time></p>
     </div>
-    <div id="adsense_top"></div>
-
-    <div class="post content">
-        <nav id="nav-toc"></nav>
-        {{content}}
+    <div id="post-meta">
+      <ul class="post_meta_list">
+        category:
+        {% for category in page.categories %}
+          <li class="post_meta_item"><a href="/category/{{ category | url_encode }}">{{ category }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul class="post_meta_list">
+        tag [
+        {% for tag in page.tags %}
+          <li class="post_meta_item"><a href="/tags/posts#{{ tag }}">{{ tag }},</a></li>
+        {% endfor %}
+        ]
+      </ul>
     </div>
+  </div>
+  <div id="adsense-top"></div>
 
-    {% include toc_gen.html %}
-    {% include anchor_new_tab.html %}
+  <nav id="nav-toc"></nav>
+  <div id="post-content">
+    {{content}}
 
-    {% include releated_posts.html %}
-    
-    <div class="post comment">
-        <script src="https://utteranc.es/client.js"
-            repo="GiGong/gigong.github.io_comments"
-            issue-term="pathname"
-            label="comment"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-        </script>
+    <div id="reference-wrapper">
+      <h3>참고자료 (References)</h3>
     </div>
+  </div>
+
+  {% include releated_posts.html %}
+
+  <div id="post-comment">
+    <script src="https://utteranc.es/client.js" repo="GiGong/gigong.github.io_comments" issue-term="pathname"
+      label="comment" theme="github-light" crossorigin="anonymous" async>
+    </script>
+  </div>
 </div>
+
+{%- comment -%} script files {%- endcomment -%}
+{% include post_function/toc_gen.html %}
+{% include post_function/anchor_new_tab.html %}
+<script src="/assets/js/post_list_scroll_button.js" defer></script>

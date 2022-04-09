@@ -4,7 +4,6 @@ footer {
 
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -15,8 +14,4 @@ footer {
     width: 25%;
     min-width: 150px;
     padding: 0;
-}
-
-#copyright {
-    text-align: center;
 }

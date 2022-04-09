@@ -1,0 +1,27 @@
+//#region    -------- css for mobile --------
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  section, footer {
+    width: 100%;
+  }
+
+  #home-wrapper {
+    padding: 3% 3%;
+  }
+
+  #top_menu ul {
+    min-width: 360px;
+  }
+  
+  .home_list_wrapper time, .category time {
+    display: none;
+  }
+
+  #post-information, #post-content {
+    padding: 0 3%;
+  }
+}
+//#endregion -------- css for mobile --------

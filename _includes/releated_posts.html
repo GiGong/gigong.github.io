@@ -28,28 +28,39 @@
   {% endfor %}
 {% endcapture %}
 
-{% assign related_posts = related_posts | split: ',' | sort | reverse | slice: 0, 10 %}
+{% assign related_posts = related_posts | split: ',' | sort | reverse | slice: 0, 7 %}
 
-<div class="post related_posts">
+<div id="related-post">
   <h1>Related Posts</h1>
-  <div class="post_list">
-
-{% for info in related_posts %}
-  {% assign post_id = info | split: ':' | last %}
-  {% for post in site.posts %}
-    {% if post.id == post_id %}
-      <a href="{{ post.url | absolute_url | remove: ".html"}}">
-        <div class="related_post wrapper">
-          <div class="related_post title">{{ post.title }}</div>
-          <div class="related_post content">
-            <p>{% include post_excerpt.html truncate_size="150" %}</p>
-          </div>
-        </div>
-      </a>
-      {% break %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
+  <div id="related-post-list-wrapper">
+    <div id="btn-left" class="post_wrapper_btn">
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5 0L13.5 3L5.5 10.5001L13.5 18.5L10.5 21.5L0 10.5L10.5 0Z" fill="black"/>
+      </svg>
+        
+    </div>
+    <ul id="related-post-list">
+      {% for info in related_posts %}
+        {% assign post_id = info | split: ':' | last %}
+        {% for post in site.posts %}
+          {% if post.id == post_id %}
+            <a href="{{ post.url | relative_url | remove: ".html"}}">
+              <li class="related_post_wrapper">
+                <div class="related_post_title">{{ post.title }}</div>
+                <div class="related_post_content">
+                  <p>{% include post_excerpt.html truncate_size="150" %}</p>
+                </div>
+              </li>
+            </a>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    <div id="btn-right" class="post_wrapper_btn">
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 21.5L2.62268e-07 18.5L8 10.9999L1.61732e-06 3L3 -9.17939e-07L13.5 11L3 21.5Z" fill="black"/>
+      </svg>
+    </div>
   </div>
 </div>

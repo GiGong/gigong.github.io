@@ -3,38 +3,38 @@ layout: home
 ---
 
 
-<div class="home post_wrapper">
-    <a href="/posts">
-        <h1 class="home title">Recent Posts</h1>
-    </a>
-    <ul class="home list">
-        {% for post in site.posts limit:5  %}
-        <a href="{{ post.url | absolute_url | remove: ".html"}}">
-            <li class="home item">
-                <span class="home post_title">{{ post.title }}</span>
-                <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-            </li>
-        </a>
-        {% endfor %}
-    </ul>
+<div class="home_list_wrapper">
+  
+    <h1 class="home_title"><a href="/posts">Recent Posts</a></h1>
+  
+  <ul class="home_posts_list">
+    {% for post in site.posts limit:5  %}
+      <a href="{{ post.url | relative_url | remove: ".html"}}">
+        <li class="home_item_post">
+          <span class="home_post_title">{{ post.title }}</span>
+          <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
 </div>
 
 
 {% for category_main in site.category_main %}
-<div class="home post_wrapper">
-    <a href="/category/{{ category_main | url_encode }}">
-        <h1 class="home title">{{ category_main }}</h1>
-    </a>
-    <ul class="home list">
-        {% assign cat_posts = site.posts | where: 'categories', category_main %}
-        {% for post in cat_posts limit:5 %}
-        <a href="{{ post.url | absolute_url | remove: ".html"}}">
-            <li class="home item">
-                <span class="home post_title">{{ post.title }}</span>
-                <time class="home date" datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
-            </li>
-        </a>
-        {% endfor %}
-    </ul>
+<div class="home_list_wrapper">
+  <a href="/category/{{ category_main | url_encode }}">
+    <h1 class="home_title">{{ category_main }}</h1>
+  </a>
+  <ul class="home_posts_list">
+    {% assign category_posts = site.posts | where: 'categories', category_main %}
+    {% for post in category_posts limit:5 %}
+      <a href="{{ post.url | relative_url | remove: ".html"}}">
+        <li class="home_item_post">
+          <span class="home_post_title">{{ post.title }}</span>
+          <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y-%m-%d"}}</time>
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
 </div>
 {% endfor %}
