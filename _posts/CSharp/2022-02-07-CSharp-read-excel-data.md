@@ -247,8 +247,6 @@ finally 문단에서 **ReleaseExcelObject()**는 꼭 해주어야 하며, 이를
 
 
 <!-- reference area -->
-  - <https://github.com/GiGong/BlogPostSample/tree/master/ReadExcelData>
-  - <https://gigong.tistory.com/4>
   - <https://www.codeproject.com/Answers/74997/Close-Excel-Process-with-Interop#answer1>
 {% include post_function/reference_area_setter.html %}
 
