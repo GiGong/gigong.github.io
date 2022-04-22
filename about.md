@@ -11,8 +11,6 @@ permalink: /about/
 
 공부하면서 새롭게 알게 된 내용, 찾기 힘들었던 내용, 공유하고 싶은 내용 등을 쓰고 있습니다.
 
-이 전에 [Tistory][gigong-tistory]{:target="_blank"}에서 블로그를 했습니다.
-
 
 ----
 
@@ -23,15 +21,6 @@ permalink: /about/
 
 
 ----
-
-
-### My Skills
-
-  - C, C#, Python
-  - WPF, XAML
-  - Prism Library for WPF (MVVM)
-{: .post .skills}
-
 
 
 [gigong-github]: {{ site.github }}
