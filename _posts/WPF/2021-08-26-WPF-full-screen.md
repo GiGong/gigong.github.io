@@ -16,9 +16,10 @@ WPF로 프로그램을 개발하다 보면 파워포인트의 '슬라이드 쇼'
 프로그램을 전체화면 시키는 방법과 원리에 관한 글입니다.
 <!--read more-->
 
-----
+<sub>*※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]의 글을 개선한 글입니다.*</sub>
 
-*※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.*
+
+----
 
 
 <!-- include for toc -->
@@ -46,6 +47,8 @@ else
 
 
 ----
+
+
 <!-- include for toc -->
 {% include post_function/post_navigation_heading.html level="1" number="2" content="알아보기" %}
 
@@ -80,6 +83,8 @@ Window는 WindowState라는 속성과 WindowStyle이라는 속성이 있습니�
 
 
 ----
+
+
 <!-- include for toc -->
 {% include post_function/post_navigation_heading.html level="1" number="000" content="완료" %}
 
@@ -104,8 +109,6 @@ code behind외에도 xaml에서 Binding과 Trigger를 통해 적용시키는 방
     </Style.Triggers>
 </Style>
 {% endhighlight %}
-
-
 
 
 
