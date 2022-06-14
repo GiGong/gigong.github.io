@@ -101,7 +101,7 @@
     text-align: center;
 }
 
-.figure_image figcaption {
+#post-content .figure_image figcaption {
     margin-top: 0.5rem;
     text-align: center;
 }
@@ -117,10 +117,39 @@
 }
 
 // pre does not inherit font-family
-.highlight pre, code {
+#post-content .highlight pre, code {
     font-family: 'D2Coding';
     font-weight: normal;
     font-size: 0.9rem;
+}
+
+#post-content blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}
+
+.table_content {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.table_content tr {
+    background-color: #fff;
+    border-top: 1px solid #cfcfcf;
+}
+
+.table_content thead th {
+    border: 1px solid #afafaf;
+    padding: 0.4rem 1rem;
+}
+
+.table_content td {
+    border: 1px solid #cfcfcf;
+    padding: 0.4rem 0.8rem;
 }
 //#endregion -------- Content --------
 
