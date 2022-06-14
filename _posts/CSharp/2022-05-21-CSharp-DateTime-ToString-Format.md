@@ -78,7 +78,7 @@ Console.WriteLine(now.ToString("yyyy MM dd tt hh mm ss"));
 | m               | 분                  |
 | s               | 초                  |
 | tt              | 오전/오후 구분자    |
-{: .table_content}
+{% include post_function/table_setter.html %}
 
 각 Format은 단일로 사용 시 자릿수를 맞춰주지 않으며 한글의 경우 깨지는 경우가 생길 수 있습니다.
 > tt: AM -> t: A (오후 -> 오)  

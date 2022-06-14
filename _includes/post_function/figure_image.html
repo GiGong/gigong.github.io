@@ -1,4 +1,9 @@
 <figure class="figure_image">
-    <img src="{{ include.url }}" alt="{{ include.description }}" width="640" height="360"/>
-    <figcaption>[ {{ include.description }} ]</figcaption>
+    {% if include.size == "360" %}
+        <img src="{{ include.url }}" alt="{{ include.description }}" width="{{ include.size }}"/>
+        <figcaption style="font-size: 0.8rem;">[ {{ include.description }} ]</figcaption>
+    {% else %}
+        <img src="{{ include.url }}" alt="{{ include.description }}" width="640"/>
+        <figcaption>[ {{ include.description }} ]</figcaption>
+    {% endif %}
 </figure> 
