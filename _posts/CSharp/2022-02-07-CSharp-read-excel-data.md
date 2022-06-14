@@ -253,6 +253,6 @@ finally 문단에서 **ReleaseExcelObject()**는 꼭 해주어야 하며, 이를
 
 
 
-[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/ReadExcelData
+[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/Console/ReadExcelData
 [Origin-Tistory-Post]: https://gigong.tistory.com/4
 [Reference-1]: https://www.codeproject.com/Answers/74997/Close-Excel-Process-with-Interop#answer1
