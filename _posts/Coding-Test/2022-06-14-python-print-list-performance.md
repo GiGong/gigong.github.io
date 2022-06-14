@@ -75,13 +75,13 @@ BENCHMARK_LENGTH 길이를 가진 output_list를 BENCHMARK_COUNT 번 반복해�
 > IDE: PyCharm Community Edition
 
 <!-- include for image -->
-{% include post_function/figure_image.html url="/assets/images/python-print-list-performance/bench_5000.webp" description="LENGTH = 5,000" size="360"%}
+{% include post_function/figure_image.html url="/assets/images/python-print-list-performance/bench_5000.webp" description="LENGTH = 5,000" width="360"%}
 
 <!-- include for image -->
-{% include post_function/figure_image.html url="/assets/images/python-print-list-performance/bench_100000.webp" description="LENGTH = 100,000" size="360" %}
+{% include post_function/figure_image.html url="/assets/images/python-print-list-performance/bench_100000.webp" description="LENGTH = 100,000" width="360" %}
 
 <!-- include for image -->
-{% include post_function/figure_image.html url="/assets/images/python-print-list-performance/bench_1000000.webp" description="LENGTH = 1,000,000" size="360" %}
+{% include post_function/figure_image.html url="/assets/images/python-print-list-performance/bench_1000000.webp" description="LENGTH = 1,000,000" width="360" %}
 
 BENCHMARK_LENGTH 가 작을 땐 서로 큰 차이가 없으나 LENGTH가 커지면 join의 성능이 좋은 것을 볼 수 있습니다.
 

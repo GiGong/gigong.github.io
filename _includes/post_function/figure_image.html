@@ -1,7 +1,11 @@
 <figure class="figure_image">
-    {% if include.size == "360" %}
-        <img src="{{ include.url }}" alt="{{ include.description }}" width="{{ include.size }}"/>
-        <figcaption style="font-size: 0.8rem;">[ {{ include.description }} ]</figcaption>
+    {% if include.width %}
+    <img src="{{ include.url }}" alt="{{ include.description }}" width="{{ include.width }}"/>
+        {% if include.width == "360" %}
+            <figcaption style="font-size: 0.8rem;">[ {{ include.description }} ]</figcaption>
+        {% else %}
+            <figcaption>[ {{ include.description }} ]</figcaption>
+        {% endif %}
     {% else %}
         <img src="{{ include.url }}" alt="{{ include.description }}" width="640"/>
         <figcaption>[ {{ include.description }} ]</figcaption>
