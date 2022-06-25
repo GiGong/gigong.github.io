@@ -13,13 +13,13 @@ excerpt_separator: <!--read more-->
 
 <!--start excerpt-->
 C#에서 정수형의 자릿수를 맞춰주고 싶을 때, 예를 들어 00001, 00123 이런 형태로 출력하는 방법입니다.  
-[표준 숫자 서식 문자열][Standard-Numeric-Format-String-MSDN]을 활용하게 되며 소수를 포함한 숫자를 문자열로 바꾸는 여러가지 형태가 존재합니다.
+[표준 숫자 서식 문자열][MSDN-Standard-Numeric-Format-String]을 활용하게 되며 소수를 포함한 숫자를 문자열로 바꾸는 여러가지 형태가 존재합니다.
 <!--read more-->
+
+<sub>*※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]의 글을 개선한 글입니다.*</sub>
 
 
 ----
-
-*※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]에 포스팅 했던 글을 개선한 글입니다.*
 
 
 <!-- include for toc -->
@@ -55,5 +55,17 @@ Code 3번째 줄: 16진수로 자리를 맞추고 싶다면, X 또는 x와 숫�
 
 
 
+
+<!-- reference area -->
+  - [MSDN-Standard-Numeric-Format-String][MSDN-Standard-Numeric-Format-String]
+  - [MSDN-Pad-Number][MSDN-Pad-Number]
+  - [MSDN-C#-String-Interpolation][MSDN-C#-String-Interpolation]
+{% include post_function/reference_area_setter.html %}
+
+
+
+
 [Origin-Tistory-Post]: https://gigong.tistory.com/3
-[Standard-Numeric-Format-String-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/standard-numeric-format-strings
+[MSDN-Standard-Numeric-Format-String]: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/standard-numeric-format-strings
+[MSDN-Pad-Number]: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros
+[MSDN-C#-String-Interpolation]: https://docs.microsoft.com/ko-kr/dotnet/csharp/tutorials/string-interpolation
