@@ -3,7 +3,7 @@ layout: post
 title:  "WPF TextBox 숫자만 입력 하기(입력 필터)"
 date:   2022-04-17 17:35
 categories: [WPF]
-tags: [wpf, textbox, input, input_filter, previewkeydown, event_handler]
+tags: [wpf, textbox, input, filter, inputfilter, previewkeydown, eventhandler, 숫자, 입력, 필터]
 excerpt_separator: <!--read more-->
 ---
 

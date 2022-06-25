@@ -3,7 +3,7 @@ layout: post
 title:  "C# 정수형 자리수 맞추기 (앞에 0으로 채우기)"
 date:   2021-09-15 21:31
 categories: [C#]
-tags: [c#, integer, int, digit, zero]
+tags: [c#, integer, int, digit, zero, 정수, 자리수]
 excerpt_separator: <!--read more-->
 ---
 

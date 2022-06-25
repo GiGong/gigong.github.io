@@ -3,7 +3,7 @@ layout: post
 title:  "WPF 음악 파일 재생하기"
 date:   2022-04-22 21:56
 categories: [WPF]
-tags: [wpf, media, music, play, music_file, mediaplayer]
+tags: [wpf, media, music, play, file, musicfile, mediaplayer, 음악, 파일, 재생]
 excerpt_separator: <!--read more-->
 ---
 

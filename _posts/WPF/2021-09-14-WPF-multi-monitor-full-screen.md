@@ -3,7 +3,7 @@ layout: post
 title:  "WPF 듀얼(서브) 모니터에서 전체화면"
 date:   2021-09-14 23:46
 categories: [WPF]
-tags: [wpf, c#, dual_monitor, sub_monitor, multi_monitor, full_screen]
+tags: [wpf, c#, dual, monitor, multi, monitor, full, screen, 전체화면, 듀얼모니터, 멀티모니터]
 excerpt_separator: <!--read more-->
 ---
 

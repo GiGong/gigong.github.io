@@ -3,7 +3,7 @@ layout: post
 title:  "C# DateTime ToString Format(오전/오후 표시 등)"
 date:   2022-05-20 17:54
 categories: [C#]
-tags: [c#, datetime, tostring, format, format_string]
+tags: [c#, datetime, tostring, format, formatstring, string, 시간, 표시, 형식, 포맷, 출력]
 excerpt_separator: <!--read more-->
 ---
 
@@ -86,7 +86,10 @@ Console.WriteLine(now.ToString("yyyy MM dd tt hh mm ss"));
 
 이 외 다양한 Format들과 예시들은 [MSDN][Custom-Date-and-Time-Format-Strings-MSDN]에서 확인하실 수 있습니다.
 
+
 ----
+
+
 <!-- include for toc -->
 {% include post_function/post_navigation_heading.html level="1" number="000" content="마무리" %}
 

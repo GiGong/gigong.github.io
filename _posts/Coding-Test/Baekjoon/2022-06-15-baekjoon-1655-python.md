@@ -3,7 +3,7 @@ layout: post
 title:  "[백준 1655 파이썬] - 가운데를 말해요"
 date:   2022-06-15 13:14
 categories: [Coding Test]
-tags: [codingtest, acmicpc, baekjoon, python, heapq]
+tags: [codingtest, acmicpc, baekjoon, 1655, python, heapq, 파이썬, 코딩테스트, 백준]
 excerpt_separator: <!--read more-->
 ---
 

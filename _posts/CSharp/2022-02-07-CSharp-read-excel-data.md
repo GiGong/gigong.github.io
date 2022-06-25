@@ -3,7 +3,7 @@ layout: post
 title:  "C# 엑셀 데이터 읽어오기 (Read Excel Data)"
 date:   2022-02-07 17:35
 categories: [C#]
-tags: [c#, excel, read, load, data]
+tags: [c#, excel, open, read, load, data, 엑셀, 데이터, 파일, 읽기, 불러오기, 읽어오기, 로드, 열기]
 excerpt_separator: <!--read more-->
 ---
 
