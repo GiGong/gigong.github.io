@@ -24,7 +24,10 @@ layout: default
       </ul>
     </div>
   </div>
-  <div id="adsense-top"></div>
+
+  <div id="adsense-top">
+    {% include services/google_adsense_horizontal_1.html %}
+  </div>
 
   <nav id="nav-toc"></nav>
   <div id="post-content">
@@ -36,6 +39,10 @@ layout: default
   </div>
 
   {% include releated_posts.html %}
+
+  <div id="adsense-bot">
+    {% include services/google_adsense_rectangle_1.html %}
+  </div>
 
   <div id="post-comment">
     <script src="https://utteranc.es/client.js" repo="GiGong/gigong.github.io_comments" issue-term="pathname"
