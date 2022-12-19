@@ -26,7 +26,12 @@ layout: default
   </div>
 
   <div id="adsense-top">
-    {% include services/google_adsense_horizontal_1.html %}
+    <div id="adsense-top-left">
+      {% include services/google_adsense_rectangle_1.html %}
+    </div>
+    <div id="adsense-top-right">
+      {% include services/google_adsense_rectangle_2.html %}
+    </div>
   </div>
 
   <nav id="nav-toc"></nav>
@@ -41,7 +46,7 @@ layout: default
   {% include releated_posts.html %}
 
   <div id="adsense-bot">
-    {% include services/google_adsense_rectangle_1.html %}
+    {% include services/google_adsense_horizontal_1.html %}
   </div>
 
   <div id="post-comment">
