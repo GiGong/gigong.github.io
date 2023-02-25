@@ -15,8 +15,10 @@ excerpt_separator: <!--read more-->
 윈도우 프로그램은 특히 엑셀 파일을 읽을 일이 자주 있습니다.  
 C#으로 엑셀 파일에서 데이터를 읽어오는 방법에 대해 알아보겠습니다.
 <!--read more-->
+> 엑셀 데이터 쓰기(저장하기)는 [이 포스트][CSharp-write-excel-data]에서 알아보았습니다.
 
 ***Excel 프로그램이 설치되어 있어야 하며, 프로그램을 사용할 컴퓨터에도 설치되어 있어야 합니다.***
+
 
 <sub>*※ 이 포스트는 과거 [티스토리 블로그][Origin-Tistory-Post]의 글을 개선한 글입니다.*</sub>
 
@@ -182,7 +184,7 @@ private static void ReleaseExcelObject(object obj)
 
 
 <!-- include for toc -->
-{% include post_function/post_navigation_heading.html level="2" number="1.5" content="Excel Process를 Kill 해주기 위한 코드" %}
+{% include post_function/post_navigation_heading.html level="2" number="1.5" content="남은 Excel Process Kill 위한 코드" %}
 
 {% highlight csharp linenos %}
 [DllImport("user32.dll", SetLastError = true)]
@@ -231,7 +233,7 @@ ReadExcelData 함수입니다. 여기서는 데이터를 string[][] 형으로 �
 <!-- include for toc -->
 {% include post_function/post_navigation_heading.html level="2" number="2.2" content="주의사항" %}
 
-finally 문단에서 **ReleaseExcelObject()**는 꼭 해주어야 하며, 이를 실행해도 간혹 Excel 프로세스가 종료되지 않고 남아있는 경우가 있습니다. 그때를 대비하여 3, 14, 80번 줄이 있어야 하고, 같은 범위에 [1.5 Excel Process를 Kill 해주기 위한 코드](#nav-1-5){:.nav_content}를 선언해 주어야 사용 가능합니다.
+finally 문단에서 **ReleaseExcelObject()**는 꼭 해주어야 하며, 이를 실행해도 간혹 Excel 프로세스가 종료되지 않고 남아있는 경우가 있습니다. 그때를 대비하여 3, 14, 80번 줄이 있어야 하고, 같은 범위에 [1.5 남은 Excel Process Kill 위한 코드](#nav-1-5){:.nav_content}를 선언해 주어야 사용 가능합니다.
 
 
 ----
@@ -254,5 +256,6 @@ finally 문단에서 **ReleaseExcelObject()**는 꼭 해주어야 하며, 이를
 
 
 [GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/Console/ReadExcelData
+[CSharp-write-excel-data]: https://www.gigong.io/2023/02/23/CSharp-write-excel-data
 [Origin-Tistory-Post]: https://gigong.tistory.com/4
 [Reference-1]: https://www.codeproject.com/Answers/74997/Close-Excel-Process-with-Interop#answer1
