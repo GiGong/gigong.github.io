@@ -1,6 +1,10 @@
 User-agent: *
+Disallow: /posts
+Disallow: /category
 Disallow: /category/
+Disallow: /tags
 Disallow: /tags/
+Disallow: /about*
 Disallow: /about*/
 Allow: /
 
