@@ -5,7 +5,9 @@ layout: home
 
 <div class="home_list_wrapper">
   
-    <h1 class="home_title"><a href="/posts">Recent Posts</a></h1>
+  <a href="/posts">
+    <h1 class="home_title">최신 글 모아보기</h1>
+  </a>
   
   <ul class="home_posts_list">
     {% for post in site.posts limit:5  %}
@@ -17,6 +19,11 @@ layout: home
       </a>
     {% endfor %}
   </ul>
+
+  <div class="btn_container">
+    <a class="home_readmore button" href="/posts">Read More</a>
+  </div>
+
 </div>
 
 
@@ -25,6 +32,7 @@ layout: home
   <a href="/category/{{ category_main | url_encode }}">
     <h1 class="home_title">{{ category_main }}</h1>
   </a>
+
   <ul class="home_posts_list">
     {% assign category_posts = site.posts | where: 'categories', category_main %}
     {% for post in category_posts limit:5 %}
@@ -36,5 +44,10 @@ layout: home
       </a>
     {% endfor %}
   </ul>
+
+  <div class="btn_container">
+    <a class="home_readmore button" href="/category/{{ category_main | url_encode }}">Read More</a>
+  </div>
+
 </div>
 {% endfor %}

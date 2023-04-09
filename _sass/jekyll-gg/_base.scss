@@ -61,7 +61,7 @@ time {
 }
 
 a:not(#post-content a, #tag-page-tag-list a,
-        .toc_post a:hover) {
+        .toc_post a:hover, .btn_container a) {
     color: inherit;
     text-decoration: none;
 }
@@ -69,4 +69,15 @@ a:not(#post-content a, #tag-page-tag-list a,
 ul:not(#post-content ul, #related-post ul) {
     list-style: none;
     padding: 0;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
