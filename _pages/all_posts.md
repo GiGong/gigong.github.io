@@ -9,8 +9,8 @@ permalink: /posts
   <ul id="all_posts_list">
     {% for post in site.posts %}
       <li class="item_post">
-        <a href="{{ post.url | relative_url | remove: ".html"}}">
-          <div class="post_title">{{ post.title }}</div>
+        <a href="{{ post.url | relative_url | remove: ".html"}}" class="post_title">
+          {{ post.title }}
         </a>
         <div class="post_meta">
           <ul class="tag_list">
