@@ -33,12 +33,6 @@
 <div id="related-post">
   <h1>Related Posts</h1>
   <div id="related-post-list-wrapper">
-    <div id="btn-left" class="post_wrapper_btn">
-      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.5 0L13.5 3L5.5 10.5001L13.5 18.5L10.5 21.5L0 10.5L10.5 0Z" fill="black"/>
-      </svg>
-        
-    </div>
     <ul id="related-post-list">
       {% for info in related_posts %}
         {% assign post_id = info | split: ':' | last %}
@@ -57,10 +51,18 @@
         {% endfor %}
       {% endfor %}
     </ul>
-    <div id="btn-right" class="post_wrapper_btn">
+
+    <div id="btn-related-post-left" class="related_post_btn">
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5 0L13.5 3L5.5 10.5001L13.5 18.5L10.5 21.5L0 10.5L10.5 0Z" fill="black"/>
+      </svg>
+    </div>
+
+    <div id="btn-related-post-right" class="related_post_btn">
       <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 21.5L2.62268e-07 18.5L8 10.9999L1.61732e-06 3L3 -9.17939e-07L13.5 11L3 21.5Z" fill="black"/>
       </svg>
     </div>
+
   </div>
 </div>
