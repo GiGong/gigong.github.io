@@ -31,7 +31,7 @@
 {% assign related_posts = related_posts | split: ',' | sort | reverse | slice: 0, 7 %}
 
 <div id="related-post">
-  <h1>Related Posts</h1>
+  <h2>Related Posts</h2>
   <div id="related-post-list-wrapper">
     <ul id="related-post-list">
       {% for info in related_posts %}
