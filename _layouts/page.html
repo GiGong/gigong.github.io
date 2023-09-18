@@ -3,5 +3,13 @@ layout: default
 ---
 
 <div id="page-wrapper">
-    {{content}}
+    <div id="page-header">
+      <div id="page-information">
+        <h1 id="page-title">{{ page.title | newline_to_br}}</h1>
+      </div>
+    </div>
+    
+    <div id="page-content">
+      {{content}}
+    </div>
 </div>

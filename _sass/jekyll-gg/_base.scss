@@ -60,13 +60,13 @@ time {
     flex-shrink: 0;
 }
 
-a:not(#post-content a, #tag-page-tag-list a,
+a:not(#post-content a, #page-content a, #tag-page-tag-list a,
         .toc_post a:hover, .btn_container a) {
     color: inherit;
     text-decoration: none;
 }
 
-ul:not(#post-content ul, #related-post ul) {
+ul:not(#post-content ul, #page-content ul, #related-post ul) {
     list-style: none;
     padding: 0;
 }
