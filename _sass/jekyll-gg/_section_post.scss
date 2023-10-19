@@ -1,6 +1,6 @@
 #post-wrapper {
     margin-top: 3rem;
-    font-weight: var(--text);
+    @include font-weight(text);
 }
 
 #post-header, #post-content, #nav-toc {
@@ -10,7 +10,7 @@
 //#region    -------- Meta Content --------
 .post {
     margin: 1rem 0;
-    font-weight: 300;
+    @include font-weight(text);
 }
 
 #post-header {
@@ -23,7 +23,7 @@
 
 #post-title {
     font-size: 2.5rem;
-    font-weight: var(--bold);
+    @include font-weight(bold);
     word-break: keep-all;
 }
 
@@ -34,7 +34,6 @@
 .post_meta_list {
     display: flex;
     flex-wrap: wrap;
-
     margin: 0;
 }
 
@@ -42,13 +41,12 @@
     padding: 0 0.25rem;
     text-decoration: underline;
 }
-//#endregion    -------- Meta Content --------
+//#endregion -------- Meta Content --------
 
 
-//#region    -------- toc --------
+//#region    -------- ToC --------
 #nav-toc {
-    margin: 3rem 0;
-
+    margin: 2rem 0;
     font-size: 0.9rem;
 }
 
@@ -59,7 +57,7 @@
 }
 
 .toc_post > a:hover {
-    font-weight: 500;
+    @include font-weight(bold);
     color: #09e;
     text-decoration: underline;
 }
@@ -74,20 +72,19 @@
     color: #09e;
     text-decoration: none;
 }
+
 .nav_post > a:hover {
     text-decoration: underline;
 }
-//#endregion    -------- toc --------
+//#endregion -------- ToC --------
 
 
 //#region    -------- Content --------
 #post-content {
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding-bottom: 5rem;
-
     word-break: keep-all;
     word-wrap: break-word;
-    
     border-top: 5px double darkgray;
     border-bottom: 5px double darkgray;
 }
@@ -108,7 +105,7 @@
 
 #post-content a:not(.toc_post a, .nav_post a) {
     color: #039;
-    font-weight: var(--regular);
+    @include font-weight(regular);
 }
 
 #post-content .highlight {
@@ -119,7 +116,7 @@
 // pre does not inherit font-family
 #post-content .highlight pre, code {
     font-family: 'D2Coding';
-    font-weight: normal;
+    @include font-weight(regular);
     font-size: 0.9rem;
 }
 
@@ -158,10 +155,10 @@
 //#endregion -------- Content --------
 
 
-//#region    -------- reference area --------
+//#region    -------- Reference area --------
 #reference-wrapper {
     margin-top: 10rem;
-    border-top: 2px solid darkgray;;
+    border-top: 2px solid darkgray;
 }
 
 #post-reference-list {
@@ -172,10 +169,10 @@
 #post-reference-list > li {
     margin-bottom: 0.2rem;
 }
-//#endregion -------- references area --------
+//#endregion -------- Reference area --------
 
 
-//#region -------- Related Posts --------
+//#region    -------- Related Posts --------
 #related-post {
     margin: 3rem 0;
 }
@@ -187,14 +184,12 @@
 #related-post-list {
     display: flex;
     list-style: none;
-    
     padding: 0.5rem 1rem;
     overflow-x: auto;
-
     scroll-behavior: smooth;
 }
 
-#related-post-list > a{
+#related-post-list > a {
     margin: 0 1rem;
 }
 
@@ -202,30 +197,26 @@
     padding: 1rem;
     width: 14rem;
     height: 100%;
-    
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid #e6e6e6;
-
     transition: 0.3s;
 }
 
-.related_post_wrapper:hover{
+.related_post_wrapper:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    
     transform: scale(1.03);
 }
 
 .related_post_title {
-    font-weight: var(--bold);
+    @include font-weight(bold);
     text-align: left;
 }
 
 .related_post_content {
     padding: 0 0.4rem;
-
     font-size: 0.85rem;
-    font-weight: var(--text);
+    @include font-weight(text);
     color: #333;
 }
 
@@ -233,7 +224,6 @@
     position: absolute;
     top: calc(50% - 2.5rem);
     cursor: pointer;
-
     background: transparent;
     border-radius: 7px;
     height: 5rem;
@@ -241,7 +231,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: 0.3s;
 }
 

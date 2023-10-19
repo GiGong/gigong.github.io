@@ -3,22 +3,19 @@ header {
     padding: 0;
     width: 100%;
     height: 25%;
-
-    color: white;
-    background-color: #3CF;
+    color: $font-color;
+    background-color: $primary-color;
 }
-
 
 //#region    -------- Icon --------
 #header-icon-list {
     display: flex;
     justify-content: flex-end;
-
     margin: 0;
 }
 
 .icon_item {
-    padding: 15px;
+    padding: 0.75rem;
 }
 
 .icon {
@@ -26,37 +23,31 @@ header {
 }
 //#endregion -------- Icon --------
 
-
 //#region    -------- Title --------
 #top-title {
     margin-top: 2rem;
-
     text-align: center;
     font-family: 'Trocchi', serif;
     font-size: 5rem;
 }
 //#endregion -------- Title --------
 
-
 //#region    -------- Menu --------
 #top-menu {
     display: flex;
     justify-content: center;
-
     padding-bottom: 1rem;
 }
 
 #top-menu ul {
     display: flex;
-
     padding: 1.5rem 0;
 }
 
 #top-menu li {
     font-family: 'Oxygen', sans-serif;
     font-size: 1.5rem;
-    font-weight: 700;
-
+    @include font-weight(black);
     padding: 0 1rem;
 }
 //#endregion -------- Menu --------

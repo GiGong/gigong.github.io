@@ -1,8 +1,17 @@
-:root {
-    --text: 300;
-    --regular: 400;
-    --bold: 500;
-    --black: 700;
+// Colors
+$primary-color: #3CF;
+$font-color: white;
+
+// Font Weights
+$font-weights: (
+  text: 300,
+  regular: 400,
+  bold: 500,
+  black: 700
+);
+
+@mixin font-weight($weight) {
+  font-weight: map-get($font-weights, $weight);
 }
 
 * {
@@ -16,18 +25,17 @@ html {
 body {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: var(--regular);
+    @include font-weight(regular);
 }
 
 section, footer {
     width: 80%;
     max-width: 900px;
-
     margin: 0 auto;
 }
 
 strong, h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--bold);
+    @include font-weight(bold);
 }
 
 h1 {
@@ -61,7 +69,7 @@ time {
 }
 
 a:not(#post-content a, #page-content a, #tag-page-tag-list a,
-        .toc_post a:hover, .btn_container a) {
+      .toc_post a:hover, .btn_container a) {
     color: inherit;
     text-decoration: none;
 }

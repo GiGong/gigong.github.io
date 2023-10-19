@@ -9,16 +9,15 @@ section {
 .center_title {
     font-size: 3.5rem;
     text-align: center;
-    font-weight: var(--black);
-
+    @include font-weight(black);
     margin-bottom: 3.5rem;
 }
 
-//#region    -------- post information --------
+//#region    -------- Tag Posts --------
 .post_title {
     word-break: keep-all;
     font-size: 1.5rem;
-    font-weight: var(--bold);
+    @include font-weight(bold);
 }
 
 .item_post {
@@ -38,13 +37,13 @@ section {
 }
 
 .post_meta .tag_list > li {
-    color: white;
+    color: $font-color;
     box-sizing: border-box;
     background: #cfcfcf;
     border-radius: 3px;
-    font-weight: var(--regular);
-    padding: 4px 8px;
-    margin: 3px;
+    @include font-weight(regular);
+    padding: 0.2rem 0.4rem;
+    margin: 0.25rem;
 }
 
 .post_meta time {
@@ -55,16 +54,15 @@ section {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical; 
-
     margin-top: 0.25rem;
     margin-left: 1rem;
-    font-weight: var(--text);
+    @include font-weight(text);
 }
 
 .post_preview p {
     margin: 0;
 }
-//#endregion -------- post information --------
+//#endregion -------- Tag Posts --------
 
 //#region    -------- Home --------
 .home_list_wrapper {
@@ -74,7 +72,7 @@ section {
 .home_title {
     display: inline;
     font-size: 2.5rem;
-    font-weight: var(--black);
+    @include font-weight(black);
 }
 
 .home_posts_list {
@@ -87,7 +85,6 @@ section {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
     word-break: keep-all;
-
     display: flex;
     justify-content: space-between;
 }
@@ -98,11 +95,9 @@ section {
     border-radius: 10px;
     color: white;
     background-color: #E0E0E0;
-    
     font-size: 0.9rem;
-    font-weight: var(--bold);
+    @include font-weight(bold);
     text-decoration: none;
-
     transition: 0.25s;
 }
 
@@ -110,7 +105,6 @@ section {
     background-color: #3c3c3c;
 }
 //#endregion -------- Home --------
-
 
 //#region    -------- Category --------
 .category_name {
@@ -122,8 +116,7 @@ section {
 }
 //#endregion -------- Category --------
 
-
-//#region -------- Tag --------
+//#region    -------- Tag --------
 .tags_list a {
     color: #555;
 }
@@ -136,11 +129,9 @@ section {
 .tag_title {
     font-size: 2.5rem;
 }
-//#endregion    -------- Tag --------
-
+//#endregion -------- Tag --------
 
 //#region    -------- Adsense --------
-
 #adsense-top, #adsense-bot {
     margin: 2rem 0;
 }
