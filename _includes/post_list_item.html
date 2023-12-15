@@ -1,0 +1,24 @@
+{% comment %}
+  {%  raw  %} 
+      list item in for loop about post list
+      e.g. {% for post in site.posts %}
+  {% endraw %}
+{% endcomment %}
+
+
+<li class="item_post">
+  <a href="{{ post.url | relative_url | remove: ".html"}}">
+    <div class="post_title">{{ post.title }}</div>
+  </a>
+  <div class="list_post_meta">
+    <ul class="category_list">
+      {% for post_category in post.categories %}
+        <li><a href="/category/{{ post_category }}">{{ post_category }}</a></li>
+      {% endfor %}
+    </ul>
+    <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{ post.date | date: "%Y-%m-%d" }}</time>
+  </div>
+  <a href="{{ post.url | relative_url | remove: ".html"}}">
+    <div class="post_preview">{% include post_excerpt.html %}</div>
+  </a>
+</li>

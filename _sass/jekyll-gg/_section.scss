@@ -25,18 +25,18 @@ section {
     margin-bottom: 2rem;
 }
 
-.post_meta {
+.list_post_meta {
     display: flex;
     justify-content: space-between;
 }
 
-.post_meta .tag_list {
+.list_post_meta .category_list {
     display: flex;
     flex-wrap: wrap;
     font-size: 0.8rem;
 }
 
-.post_meta .tag_list > li {
+.list_post_meta .category_list > li {
     color: $font-color;
     box-sizing: border-box;
     background: #cfcfcf;
@@ -46,7 +46,7 @@ section {
     margin: 0.25rem;
 }
 
-.post_meta time {
+.list_post_meta time {
     color: #828282;
 }
 

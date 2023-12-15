@@ -3,26 +3,9 @@ layout: default
 ---
 
 <div id="post-wrapper">
-  <div id="post-header">
-    <div id="post-information">
-      <h1 id="post-title">{{ page.title | newline_to_br}}</h1>
-      <p id="post-date"><time datetime="{{ page.date | date: "%Y년 %m월 %d일" }}">{{ page.date | date: "%Y년 %m월 %d일" }}</time></p>
-    </div>
-    <div id="post-meta">
-      <ul class="post_meta_list">
-        category:
-        {% for category in page.categories %}
-          <li class="post_meta_item"><a href="/category/{{ category | url_encode }}">{{ category }}</a></li>
-        {% endfor %}
-      </ul>
-      <ul class="post_meta_list">
-        tag [
-        {% for tag in page.tags %}
-          <li class="post_meta_item"><a href="/tags/posts#{{ tag }}">{{ tag }},</a></li>
-        {% endfor %}
-        ]
-      </ul>
-    </div>
+  <div id="post-information">
+    <h1 id="post-title">{{ page.title | newline_to_br}}</h1>
+    <p id="post-date" class="post_meta"><time datetime="{{ page.date | date: "%Y년 %m월 %d일" }}">{{ page.date | date: "%Y년 %m월 %d일" }}</time></p>
   </div>
 
   <div id="adsense-top">

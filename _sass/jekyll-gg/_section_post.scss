@@ -3,7 +3,7 @@
     @include font-weight(text);
 }
 
-#post-header, #post-content, #nav-toc {
+#post-information, #post-content, #nav-toc {
     padding: 0 5%;
 }
 
@@ -11,10 +11,6 @@
 .post {
     margin: 1rem 0;
     @include font-weight(text);
-}
-
-#post-header {
-    font-size: 0.9rem;
 }
 
 #post-information {
@@ -27,17 +23,18 @@
     word-break: keep-all;
 }
 
-#post-date, #post-meta {
+.post_meta {
+    font-size: 0.9rem;
     color: #777;
 }
 
-.post_meta_list {
+#post-tag {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
 }
 
-.post_meta_item {
+.post_tag_item {
     padding: 0 0.25rem;
     text-decoration: underline;
 }

@@ -11,22 +11,7 @@ permalink: /tags/posts
       <h2 class="tag_title center_title">{{ tag_name }}</h2>
       <ul class="tag_posts_list">
         {% for post in site.tags[tag_name] %}
-          <li class="item_post">
-            <a href="{{ post.url | relative_url | remove: ".html"}}">
-              <div class="post_title">{{ post.title }}</div>
-            </a>
-            <div class="post_meta">
-              <ul class="tag_list">
-                {% for post_tag in post.tags %}
-                  <li><a href="#{{ post_tag }}">{{ post_tag }}</a></li>
-                {% endfor %}
-              </ul>
-              <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{ post.date | date: "%Y-%m-%d" }}</time>
-            </div>
-            <a href="{{ post.url | relative_url | remove: ".html"}}">
-              <div class="post_preview">{% include post_excerpt.html %}</div>
-            </a>
-          </li>
+          {% include post_list_item.html %}
         {% endfor %}
       </ul>
     </div>

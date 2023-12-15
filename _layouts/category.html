@@ -6,26 +6,7 @@ layout: home
   <h1 class="category_title center_title">{{ page.title }}</h1>
   <ul class="category_posts_list">
     {% for post in site.categories[page.title] %}
-      <li class="item_post">
-        <a href="{{ post.url | relative_url | remove: ".html"}}">
-          <div class="post_title">{{ post.title }}</div>
-        </a>
-        <div class="post_meta">
-          <div>
-            <ul class="tag_list">
-              {% for post_tag in post.tags %}
-                <li>
-                  <a href="/tags/posts#{{ post_tag }}">{{ post_tag }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-          <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{ post.date | date: "%Y-%m-%d" }}</time>
-        </div>
-        <a href="{{ post.url | relative_url | remove: ".html"}}">
-          <div class="post_preview">{% include post_excerpt.html %}</div>
-        </a>
-      </li>
+      {% include post_list_item.html %}
     {% endfor %}
   </ul>
 </div>

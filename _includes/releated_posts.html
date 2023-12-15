@@ -32,6 +32,13 @@
 
 <div id="related-post">
   <h2>Related Posts</h2>
+  <ul id="post-tag" class="post_meta">
+    tag [
+    {% for tag in page.tags %}
+      <li class="post_tag_item"><a href="/tags/posts#{{ tag }}">{{ tag }},</a></li>
+    {% endfor %}
+    ]
+  </ul>
   <div id="related-post-list-wrapper">
     <ul id="related-post-list">
       {% for info in related_posts %}
