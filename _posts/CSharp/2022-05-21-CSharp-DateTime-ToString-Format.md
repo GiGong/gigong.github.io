@@ -45,7 +45,7 @@ Console.WriteLine(now.ToString("yyyy MM dd tt hh mm ss"));
 
 
 <!-- include for toc -->
-{% include post_function/post_navigation_heading.html level="1" number="1.2" content="실행 결과" %}
+{% include post_function/post_navigation_heading.html level="2" number="1.2" content="실행 결과" %}
 
 {% highlight text linenos %}
 2022년 05월 21일, 오후 07시 14분 19초 입니다
