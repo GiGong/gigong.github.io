@@ -1,0 +1,10 @@
+<script defer>
+  const target = document.getElementById("post-reference-list");
+  if (target) {
+    const fragment = document.createDocumentFragment();
+    fragment.appendChild(target);
+    document.querySelector("#reference-wrapper > details").appendChild(fragment);
+  } else {
+    document.querySelector("#reference-wrapper > details").remove();
+  }
+</script>

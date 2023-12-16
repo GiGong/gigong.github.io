@@ -78,6 +78,10 @@ ul:not(#post-content ul, #page-content ul, #related-post ul) {
     padding: 0;
 }
 
+summary {
+    cursor: pointer;
+}
+
 .btn_container {
     display: flex;
     justify-content: center;
