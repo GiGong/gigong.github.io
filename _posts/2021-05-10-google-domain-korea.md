@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "구글도메인(io 도메인) 구매하기"
 date:   2021-05-10 20:44
 categories: [Diary]
 tags: [diary, google_domain, io_domain, 구글도메인, io도메인, 구매]
-excerpt_separator: <!--read more-->
 ---
 
 

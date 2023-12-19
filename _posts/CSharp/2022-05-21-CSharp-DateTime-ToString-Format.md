@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "C# DateTime ToString Format(오전/오후 표시 등)"
 date:   2022-05-20 17:54
 categories: [C#]
 tags: [c#, datetime, tostring, format, formatstring, string, 시간, 표시, 형식, 포맷, 출력]
-excerpt_separator: <!--read more-->
 ---
 
 

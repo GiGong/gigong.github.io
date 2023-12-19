@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "Python list print 방법과 성능"
 date:   2022-06-14 14:28
 categories: [Coding Test]
 tags: [python, print, performance, asterisk, join, 파이썬, 리스트, 출력, 방법, 성능, 코딩테스트]
-excerpt_separator: <!--read more-->
 ---
 
 

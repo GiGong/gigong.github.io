@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "C# 엑셀 파일 저장하기 (Write Excel Data)"
 date:   2023-02-23 20:33
 categories: [C#]
 tags: [c#, excel, open, write, save, store, data, 엑셀, 데이터, 파일, 쓰기, 내보내기, 저장하기]
-excerpt_separator: <!--read more-->
 ---
 
 
