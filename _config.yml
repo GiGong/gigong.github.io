@@ -39,3 +39,13 @@ category_main : ["C#", "WPF"]
 permalink: /:year/:month/:day/:title
 
 start_excerpt: "<!--start excerpt-->"
+
+defaults:
+  -
+    scope:
+      path: ""        # an empty string here means all files in the project
+      type: "posts"   # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      excerpt_separator: <!--read more-->
+      is_post: true   # https://stackoverflow.com/a/23555679
