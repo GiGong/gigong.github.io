@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "ko" }}">
     {% include structure/head.html %}
 
-    <body>
+    <body {%  if page.is_post %} data-scroll="none" {% endif %}>
         
         {% include structure/header.html %}
 

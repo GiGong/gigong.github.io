@@ -1,6 +1,9 @@
 // Colors
 $primary-color: #3CF;
-$font-color: white;
+$header-font-color: white;
+
+$base-background-color: white;
+$scroll-background-color: #f0f8ff;
 
 // Font Weights
 $font-weights: (
@@ -26,12 +29,22 @@ body {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
     @include font-weight(regular);
+    transition: background-color 1s ease;
+}
+
+[data-scroll='none'] {
+    background-color: $base-background-color;
+}
+  
+[data-scroll='down'] {
+    background-color: $scroll-background-color;
 }
 
 section, footer {
     width: 80%;
-    max-width: 900px;
+    max-width: 54rem;
     margin: 0 auto;
+    background: white;
 }
 
 strong, h1, h2, h3, h4, h5, h6 {

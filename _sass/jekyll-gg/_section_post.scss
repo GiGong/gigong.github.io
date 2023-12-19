@@ -3,7 +3,11 @@
     @include font-weight(text);
 }
 
-#post-information, #post-content, #nav-toc {
+#nav-toc {
+    padding-left: 5rem;
+}
+
+#post-information, #post-content {
     padding: 0 5%;
 }
 
