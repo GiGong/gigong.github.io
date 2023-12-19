@@ -13,7 +13,7 @@
   <div class="list_post_meta">
     <ul class="category_list">
       {% for post_category in post.categories %}
-        <li><a href="/category/{{ post_category }}">{{ post_category }}</a></li>
+        <li><a href="/category/{{ post_category | url_encode }}">{{ post_category }}</a></li>
       {% endfor %}
     </ul>
     <time datetime="{{post.date | date: "%Y-%m-%d"}}">{{ post.date | date: "%Y-%m-%d" }}</time>
