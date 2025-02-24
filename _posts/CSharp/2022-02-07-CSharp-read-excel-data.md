@@ -253,7 +253,7 @@ finally 문단에서 **ReleaseExcelObject()**는 꼭 해주어야 하며, 이를
 
 
 
-[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/Console/ReadExcelData
+[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/main/Console/ReadExcelData
 [CSharp-write-excel-data]: https://www.gigong.io/2023/02/23/CSharp-write-excel-data
 [Origin-Tistory-Post]: https://gigong.tistory.com/4
 [Reference-1]: https://www.codeproject.com/Answers/74997/Close-Excel-Process-with-Interop#answer1

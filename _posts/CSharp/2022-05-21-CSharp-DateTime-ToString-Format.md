@@ -105,4 +105,4 @@ Console.WriteLine(now.ToString("yyyy MM dd tt hh mm ss"));
 
 [Origin-Tistory-Post]: https://gigong.tistory.com/105
 [Custom-Date-and-Time-Format-Strings-MSDN]: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/custom-date-and-time-format-strings
-[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/Console/DateTimeToStringFormat
+[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/main/Console/DateTimeToStringFormat

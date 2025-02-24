@@ -272,7 +272,7 @@ static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId)
 
 
 
-[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/Console/WriteExcelData
+[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/main/Console/WriteExcelData
 [CSharp-read-excel-data]: https://www.gigong.io/2022/02/07/CSharp-read-excel-data
 [Origin-Tistory-Post]: https://gigong.tistory.com/96
 [CSharp-Multidimensional-Array]: https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/arrays/multidimensional-arrays

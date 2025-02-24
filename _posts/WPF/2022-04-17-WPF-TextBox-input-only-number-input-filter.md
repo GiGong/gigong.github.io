@@ -135,7 +135,7 @@ KeyConverter, keyInterop.VirtualKeyFromKey 등의 방법으로는 NumPad를 처�
 
 
 
-[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/WPF/TextBox_Input_Filter
+[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/main/WPF/TextBox_Input_Filter
 [Origin-Tistory-Post]: https://gigong.tistory.com/5
 [Preview-Key-Down-Event]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.uielement.previewkeydown
 [Key-Down-Event]: https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.uielement.keydown

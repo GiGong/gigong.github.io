@@ -143,4 +143,4 @@ Multi Window 상황에서 Close를 해주지 않을 경우
 
 
 [Origin-Tistory-Post]: https://gigong.tistory.com/8
-[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/master/WPF/PlayMusicFile
+[GitHub-Sample]: https://github.com/GiGong/BlogPostSample/tree/main/WPF/PlayMusicFile
